@@ -1,0 +1,374 @@
+/* styles.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav a {
+  margin-top: 30vh;
+  float: left;
+  display: block;
+  color: rgb(126, 69, 241);
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #ca1010;
+  color: black;
+  text-transform: uppercase;
+}
+
+nav a.active {
+  background-color: #4caf50;
+  color: rgb(20, 19, 19);
+}
+
+.search-container {
+  float: right;
+  margin-top: 30vh;
+}
+
+.search-container select,
+.search-container  input[type="text"]  {
+  padding: 6px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}
+
+.search-container button {
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 16px;
+  background: #0a06d3;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background-color: #b92957;
+}
+
+/* Adjusting header styles */
+header {
+  width: 100%;
+  height: 40vh;
+  background-image: url("newhead.jpg");
+  background-position: center; /* Centers the image */
+  overflow: hidden; /* Clearing floats */
+  position: relative;
+}
+
+.login {
+  margin-top: 10px;
+  float: right;
+  font-family: Arial;
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+.login:hover {
+  color: #500de2; /* Changed color on hover */
+  text-transform: uppercase;
+}
+
+h2.homeExpc {
+  color: #000000;
+  text-align: center;
+  font-size: 35px;
+}
+
+label {
+  font-size: 1.4em;
+  text-align: justify;
+  text-decoration-thickness: 100px;
+  color: rgb(226, 13, 13);
+  text-decoration-style: solid;
+}
+
+h3 {
+  color: #cc1c1c;
+  text-align: center;
+}
+
+.container1 {
+  background-color: #c8def5;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.city {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.city img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.city-info {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.container3 {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.room {
+  width: 200px;
+  margin: 35px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.room img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+h1 {
+  text-align: center;
+}
+.containercontactform {
+  background-image: url(""); /* Replace 'your-image-url.jpg' with the path to your image */
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-position: center; /* Centers the image */
+  padding: 5px; /* Adjust padding as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; /* Ensures the container takes the full height of the viewport */
+}
+
+form {
+  width: 50%;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+#secQue,#type,#furnishing,#carpet_area,#total_floor,#project_name,#owner_name,#price,#location,
+#contact_number,#email,#floor_number,
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+#response {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Footer Styles */
+footer {
+  width: 100%;
+  background-color: #111;
+  text-align: center;
+  padding: 50px 0;
+  color: #fff;
+  position: static; /* Change position to static for proper placement */
+  bottom: auto; /* Reset bottom position */
+  bottom: 0;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.socialIcons a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: #ccc;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.socialIcons a i {
+  font-size: 2em;
+  color: black;
+  opacity: 0.9;
+}
+
+.socialIcons a:hover {
+  background-color: #111;
+  transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+  color: white;
+  transition: 0.5s;
+}
+
+.footerNav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footerNav ul li a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+  opacity: 1;
+}
+
+.footerBottom {
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Add this CSS for smaller screens */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-links {
+  display: flex;
+  list-style: none;
+}
+
+.menu-links li {
+  margin-right: 20px;
+}
+/* Additional styles specific to the About page can be added here */
+.about-section {
+  margin: 10px;
+  padding: 40px;
+  text-align: justify;
+}
+.about-section h2 {
+  text-decoration: underline;
+  color: #000;
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.about-section p {
+  font-size: large;
+  margin-bottom: 25px;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-links {
+    display: none;
+    flex-direction: column;
+  }
+
+  .menu-links.active {
+    display: flex;
+  }
+
+  /* Adjust footer padding for smaller screens */
+  footer {
+    padding: 20px 0;
+  }
+}
+/*signUp user*/
+.SignUp1,.login-formc,.container {
+  margin-left: 370px;
+  align-items: center;
+  align-items: center;
+  margin-top: 10px;
+}
+#SignH,.login-heading{
+  margin-top: 2px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  }
+  .buttonsignUp {
+    width: 50%; /* Adjusted width */
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #007bff;
+    color: #fff;
+    margin-left: 25%;
+    align-content: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+        .buttonsignUp:hover{
+  background-color: #d51717;
+}
+.aclogin:hover{
+  text-transform: uppercase;
+  color: #b92957;
+}
+.login-google-button {
+  width: 30%; /* Adjusted width */
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #d01540;
+  color: #fff;
+  margin-left:40%;
+  align-content: center;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.addH{
+  margin-top: 10px;
+  margin-left: 10%;
+}
