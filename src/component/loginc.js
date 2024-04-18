@@ -51,9 +51,9 @@ const LoginPage = () => {
         <p className="login-link">
           <a href="/signup">Sign Up</a> | <a href="#" onClick={handleForgotPassword}>Forgot Password?</a>
         </p>
-      
+        <button className="login-google-button">Login with Google</button>
       </form>
-      <button className="login-google-button">Login with Google</button>
+      
       
     </div>
   );

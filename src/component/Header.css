@@ -161,7 +161,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh; /* Ensures the container takes the full height of the viewport */
+  height: 103vh; /* Ensures the container takes the full height of the viewport */
 }
 
 form {
@@ -170,6 +170,7 @@ form {
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
 }
 
 form label {
@@ -328,7 +329,7 @@ footer {
 }
 /*signUp user*/
 .SignUp1,.login-formc,.container {
-  margin-left: 370px;
+  margin-left: 25%;
   align-items: center;
   align-items: center;
   margin-top: 10px;
@@ -350,7 +351,7 @@ footer {
     border-radius: 3px;
     cursor: pointer;
 }
-        .buttonsignUp:hover{
+.buttonsignUp:hover{
   background-color: #d51717;
 }
 .aclogin:hover{
