@@ -358,16 +358,17 @@ footer {
   text-transform: uppercase;
   color: #b92957;
 }
-.login-google-button {
+#signInButtonGoogle {
   width: 30%; /* Adjusted width */
   padding: 10px;
   margin-bottom: 10px;
-  background-color: #d01540;
-  color: #fff;
   margin-left:40%;
   align-content: center;
   border-radius: 3px;
   cursor: pointer;
+}
+buttonText{
+  color: #000;
 }
 .addH{
   margin-top: 10px;

@@ -1,8 +1,23 @@
-import React from 'react';
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import axios from 'axios';
 import './Header.css';
 
 function Header() {
+  const [city, setCity] = useState('');
+  const [roomType, setRoomType] = useState('');
+
+  const handleSearch = async () => {
+    try {
+      // Send search request to server with selected filters
+      const response = await axios.get(`/api/search?city=${city}&roomType=${roomType}`);
+      // Process search results, you may want to set them to state and navigate to search results page
+      console.log(response.data);
+    } catch (error) {
+      console.error('Error fetching search results:', error);
+    }
+  };
+
   return (
     <header>
       <div className="login">
@@ -16,7 +31,7 @@ function Header() {
         <Link to="/contact">Contact</Link>
         <div className="search-container">
           <label htmlFor="city">City:</label>
-          <select id="city" name="city">
+          <select id="city" name="city" value={city} onChange={(e) => setCity(e.target.value)}>
             <option value="">-- Select City --</option>
             <option value="Gorakhpur">Gorakhpur</option>
             <option value="Deoria">Deoria</option>
@@ -26,7 +41,7 @@ function Header() {
             {/* Add more cities as needed */}
           </select>
           <label htmlFor="roomType">Room Type:</label>
-          <select id="roomType" name="roomType">
+          <select id="roomType" name="roomType" value={roomType} onChange={(e) => setRoomType(e.target.value)}>
             <option value="">-- Select RoomType --</option>
             <option value="1bhkR">1BHKRoom</option>
             <option value="2bhkR">2BHKRoom</option>
@@ -35,7 +50,7 @@ function Header() {
             <option value="PG">PG</option>
             <option value="Villa">Villa</option>
           </select>
-          <button>Search</button>
+          <button onClick={handleSearch}>Search</button>
         </div>
       </nav>
     </header>

@@ -1,10 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import { GoogleLogin } from 'react-google-login';
+import { Link, useHistory } from "react-router-dom";
+const clientId="777737467772-qg0qesg1hn06apa9auclcja149nbdhob.apps.googleusercontent.com";
 
+const onSuccess =(response) =>{
+  console.log("login SUCCESS");
+}
+const onFailure =(res) =>{
+  console.log("login FAILED");
+}
 const LoginPage = () => {
   const [formData, setFormData] = useState({
-    emailOrContact: '',
-    password: '',
+    emailOrContact: "",
+    password: "",
   });
+  
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,12 +32,12 @@ const LoginPage = () => {
 
   const handleForgotPassword = () => {
     // Add logic to handle forgot password functionality
-    console.log('Forgot Password');
+    console.log("Forgot Password");
   };
 
   return (
     <div className="login-container">
-      <h2 className="login-heading">Login</h2>
+      <h2 className="login-heading">User Login</h2>
       <form onSubmit={handleSubmit} className="login-formc">
         <label>
           Email/Contact:
@@ -47,14 +57,30 @@ const LoginPage = () => {
             onChange={handleChange}
           />
         </label>
-        <button type="submit" className="login-button">Login</button>
+        <button type="submit" className="login-button">
+          Login
+        </button>
         <p className="login-link">
-          <a href="/signup">Sign Up</a> | <a href="#" onClick={handleForgotPassword}>Forgot Password?</a>
+          <a href="/signup">Sign Up</a> |{" "}
+          <a href="#" onClick={handleForgotPassword}>
+            Forgot Password?
+          </a>
         </p>
-        <button className="login-google-button">Login with Google</button>
+        <p>
+          Login as Room Owner{" "}
+          <Link to="/owner-login" className="aclogin">Login</Link>
+        </p>
+        <div id='signInButtonGoogle'>
+            <GoogleLogin
+            clientId={clientId}
+            buttonText="LoginWithGoogle"
+            onSuccess ={onSuccess}
+            onFailure={onFailure}
+            cookiesPolicy={'single_host_origin'}
+            isSignedIn={true}
+            />
+        </div>
       </form>
-      
-      
     </div>
   );
 };
