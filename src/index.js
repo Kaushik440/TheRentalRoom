@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
+import { Auth0Provider } from '@auth0/auth0-react';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -7,7 +9,16 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Auth0Provider
+    domain="dev-ov68qg3yb4k8rodq.us.auth0.com"
+    clientId="90Y90f7aa9BurFEcngi4X59puvsa6BNK"
+    authorizationParams={{
+      redirect_uri: window.location.origin
+    }}
+  >
+        <App />
+  </Auth0Provider>
+
   </React.StrictMode>
 );
 

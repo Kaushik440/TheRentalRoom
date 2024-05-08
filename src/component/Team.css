@@ -1,0 +1,83 @@
+header {
+    margin-bottom: 0px; /* Add margin at the bottom */
+  }
+  
+  .containerteam1 {
+    padding-top: 15px; /* Add padding at the top */
+  }
+p.teamheada{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    }
+    .containerteam1{
+        background-color: #ccc;
+      /*  background-image: url('photo-1554995207-c18c203602cb.avif');/* Replace 'your-image-url.jpg' with the path to your image */
+        /*background-size: cover; /* Ensures the image covers the entire area */
+        /* background-position: center; /* Centers the image */
+    }
+.contentbox {
+        padding: 5px; /* Adjust padding as needed */
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: flex-start;
+}
+.containerteam {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Arrange items with space between */
+}
+.box {
+    position: relative;
+    width: calc(25% - 80px); /* Adjusted width to occupy 25% of the container width */
+    height: 300px;
+    margin: 20px;
+    background: #c9b6b6;
+    transition: height 0.5s;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+.box:hover {
+    height: 400px;
+}
+.box .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.box .imgBx img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box .containerteam {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+.box:hover .containerteam {
+    opacity: 1;
+}
+h2 {
+    color: blue;
+    margin: 0;
+    font-size: 1.5em;
+    line-height: 1.2;
+}
+span {
+    font-size: 0.8em;
+}

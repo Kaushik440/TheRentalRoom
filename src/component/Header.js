@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import { useAuth0 } from "@auth0/auth0-react";
 import './Header.css';
 
 function Header() {
   const [city, setCity] = useState('');
   const [roomType, setRoomType] = useState('');
+  const { loginWithRedirect,isAuthenticated,logout,user } = useAuth0();
 
   const handleSearch = async () => {
     try {
@@ -21,7 +23,28 @@ function Header() {
   return (
     <header>
       <div className="login">
-        <Link to="/login">Login/SignUp</Link>
+      {isAuthenticated && (
+      <div>
+        {/*<img src={user.picture} alt={user.name} />
+        <p>{user.email}</p>
+        */}
+        <p className='username'>{user.name}</p>
+      </div>
+    )
+  }
+      {isAuthenticated ?
+      (
+        <div>
+        <button className='Buttonlogin' onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
+        Log Out
+      </button>
+      </div>
+       
+      ) :(
+        <div>
+        <button  className='Buttonlogin' onClick={() => loginWithRedirect()}>Log In</button>
+        </div>
+      )}
       </div>
       
       <nav>

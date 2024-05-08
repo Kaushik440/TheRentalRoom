@@ -1,4 +1,6 @@
 import React from 'react';
+import kaushikp from './images/Home.jpg';
+import './Team.css';
 
 function Team() {
   return (
@@ -10,11 +12,11 @@ function Team() {
 <div class="contentbox">
     <div class="box">
         <div class="imgBx">
-            <img src="IMG-20240314-WA0223.jpg" alt="Placeholder Image"/>
+            <img src={kaushikp} alt="Placeholder Image"/>
         </div>
         <div class="containerteam">
             <h2>Kaushik Pandey</h2>
-            <span>Web Designer</span>
+            <span>Web Designer/</span>
         </div>
     </div>
 

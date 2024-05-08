@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { GoogleLogin } from 'react-google-login';
 import { Link, useHistory } from "react-router-dom";
+
 const clientId="777737467772-qg0qesg1hn06apa9auclcja149nbdhob.apps.googleusercontent.com";
 
 const onSuccess =(response) =>{
