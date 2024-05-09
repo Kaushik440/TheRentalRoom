@@ -65,3 +65,23 @@ footer {
     padding: 20px;
     text-align: center;
   }
+  /* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-links {
+    display: none;
+    flex-direction: column;
+  }
+
+  .menu-links.active {
+    display: flex;
+  }
+
+  /* Adjust footer padding for smaller screens */
+  footer {
+    padding: 20px 0;
+  }
+}

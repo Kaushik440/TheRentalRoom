@@ -1,0 +1,26 @@
+.container3 {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .room {
+    width: 200px;
+    margin: 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .room img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  h1 {
+    text-align: center;
+  }

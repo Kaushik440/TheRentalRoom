@@ -6,7 +6,7 @@ import Homeimg from "./images/Home.jpg";
 import GKP from "./images/gkp.jpg";
 import Lucknow from "./images/Lucknow.jpg";
 import Varanasi from "./images/varanasi.jpg"
-
+import './Home.css';
 function Home() {
   return (
     <>

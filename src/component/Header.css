@@ -12,7 +12,7 @@ nav a {
   display: block;
   color: rgb(126, 69, 241);
   text-align: center;
-  padding: 14px 20px;
+  padding: 10px 10px;
   text-decoration: none;
 }
 
@@ -60,11 +60,9 @@ nav a.active {
 /* Adjusting header styles */
 header {
   width: 100%;
-  height: 40vh;
+  height: 45vh;
   background-image: url("newhead.jpg");
   background-position: center; /* Centers the image */
-  overflow: hidden; /* Clearing floats */
-  position: relative;
 }
 
 .Buttonlogin {
@@ -129,85 +127,8 @@ h3 {
   text-align: center;
 }
 
-.container3 {
-  margin-top: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding: 20px;
-}
 
-.room {
-  width: 200px;
-  margin: 35px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  text-align: center;
-}
 
-.room img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-h1 {
-  text-align: center;
-}
-.containercontactform {
-  background-image: url(""); /* Replace 'your-image-url.jpg' with the path to your image */
-  background-size: cover; /* Ensures the image covers the entire area */
-  background-position: center; /* Centers the image */
-  padding: 5px; /* Adjust padding as needed */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 103vh; /* Ensures the container takes the full height of the viewport */
-}
-
-form {
-  width: 50%;
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  
-}
-
-form label {
-  display: block;
-  margin-bottom: 15px;
-}
-
-form input[type="text"],
-form input[type="email"],
-form input[type="password"],
-#secQue,#type,#furnishing,#carpet_area,#total_floor,#project_name,#owner_name,#price,#location,
-#contact_number,#email,#floor_number,
-form textarea {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  box-sizing: border-box;
-}
-
-form button {
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  border-radius: 3px;
-}
-
-#response {
-  margin-top: 20px;
-  text-align: center;
-}
 
 
 
@@ -262,46 +183,6 @@ form button {
   footer {
     padding: 20px 0;
   }
-}
-/*signUp user*/
-.SignUp1,.login-formc,.container {
-  margin-left: 25%;
-  align-items: center;
-  align-items: center;
-  margin-top: 10px;
-}
-#SignH,.login-heading{
-  margin-top: 2px;
-  text-align: center;
-  font-size: 30px;
-  font-weight: bold;
-  }
-  .buttonsignUp {
-    width: 50%; /* Adjusted width */
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #007bff;
-    color: #fff;
-    margin-left: 25%;
-    align-content: center;
-    border-radius: 3px;
-    cursor: pointer;
-}
-.buttonsignUp:hover{
-  background-color: #d51717;
-}
-.aclogin:hover{
-  text-transform: uppercase;
-  color: #b92957;
-}
-#signInButtonGoogle {
-  width: 30%; /* Adjusted width */
-  padding: 10px;
-  margin-bottom: 10px;
-  margin-left:40%;
-  align-content: center;
-  border-radius: 3px;
-  cursor: pointer;
 }
 buttonText{
   color: #000;
