@@ -5,8 +5,11 @@ function About() {
     <div>
       <main style={{ backgroundColor: "#aaeba7" }}>
         <section className="about-section">
-          <h2>Our Mission</h2>
+        <h2>About Us</h2>
+      
+          <h4>Welcome to our website! We are dedicated to...</h4>
           <p>
+
             At Rental Room Search, our mission is simple yet powerful: to
             revolutionize the way people search for rental rooms. We are
             dedicated to providing broker-free services, ensuring that our users
@@ -27,8 +30,7 @@ function About() {
           </p>
         </section>
       </main>
-      <h2>About Us</h2>
-      <p>Welcome to our website! We are dedicated to...</p>
+      
     </div>
   );
 }

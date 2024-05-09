@@ -23,15 +23,11 @@ function Header() {
   return (
     <header>
       <div className="login">
-      {isAuthenticated && (
-      <div>
-        {/*<img src={user.picture} alt={user.name} />
-        <p>{user.email}</p>
-        */}
-        <p className='username'>{user.name}</p>
-      </div>
-    )
-  }
+      {isAuthenticated && user && (
+  <div>
+    <p className='username'>{user.name}</p>
+  </div>
+)}
       {isAuthenticated ?
       (
         <div>
@@ -47,9 +43,9 @@ function Header() {
       )}
       </div>
       
-      <nav>
+      <nav className='navbar'>
         <Link to="/" className="active">Home</Link>
-        <Link to="/save">Save</Link>
+        <Link to="/save" >Save</Link>
         <Link to="/about">About</Link>
         <Link to="/contact">Contact</Link>
         <div className="search-container">
@@ -76,6 +72,7 @@ function Header() {
           <button onClick={handleSearch}>Search</button>
         </div>
       </nav>
+      
     </header>
   );
 }

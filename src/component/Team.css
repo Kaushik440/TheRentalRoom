@@ -10,6 +10,13 @@ p.teamheada{
     font-size: 30px;
     font-weight: bold;
     }
+    .description
+    {
+        text-align: center;
+        font-size: 25px;
+        font-weight:lighter;
+        
+    }
     .containerteam1{
         background-color: #ccc;
       /*  background-image: url('photo-1554995207-c18c203602cb.avif');/* Replace 'your-image-url.jpg' with the path to your image */
