@@ -96,8 +96,10 @@ function Home() {
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-        <h3>Our Collections</h3>
+       
+        <h3 className="ourcollection">Our Collections</h3>
         <div className="container3">
+          
           <div className="room">
             <img src={BHK1} alt="Single Room" />
             <p>1BHK</p>

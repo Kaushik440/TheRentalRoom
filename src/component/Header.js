@@ -62,12 +62,11 @@ function Header() {
           <label htmlFor="roomType">Room Type:</label>
           <select id="roomType" name="roomType" value={roomType} onChange={(e) => setRoomType(e.target.value)}>
             <option value="">-- Select RoomType --</option>
-            <option value="1bhkR">1BHKRoom</option>
-            <option value="2bhkR">2BHKRoom</option>
-            <option value="1bhkF">1BHK Flate</option>
-            <option value="2bhkF">2BHK Flate</option>
-            <option value="PG">PG</option>
-            <option value="Villa">Villa</option>
+            <option value="1bhkR">1BHK</option>
+            <option value="2bhkR">2BHK</option>
+            <option value="1bhkF">3BHK</option>
+            <option value="home">HOME</option>
+            
           </select>
           <button onClick={handleSearch}>Search</button>
         </div>
