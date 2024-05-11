@@ -5,7 +5,6 @@ import Footer from './component/Footer';
 import Home from './component/Home';
 import About from './component/About';
 import ContactUs from './component/ContactUs';
-
 import SignUpPage from './component/SignUp';
 import AddRoomPage from './component/addroom';
 import Team from './component/Team';
