@@ -15,7 +15,7 @@ function ContactUs() {
     .then(response => response.text())
     .then(data => {
       // Assuming the response is a success message
-      setSuccessMessage(data);
+      setSuccessMessage("Message Submited Successfully");
       // Clearing form fields
       event.target.reset();
     })
@@ -41,9 +41,10 @@ function ContactUs() {
         <textarea id="message" name="message" required></textarea>
 
         <button type="submit">Submit</button>
+        <div id="response">{successMessage}</div>
       </form>
 
-      <div id="response">{successMessage}</div>
+     
     </div>
   );
 }
