@@ -110,9 +110,19 @@ const AddRoomPage = () => {
 
         <label htmlFor="price">Price (INR/month):</label>
         <input type="number" id="price" name="price" value={formData.price} onChange={handleChange} />
+        
+        <label htmlFor="type">City:</label>
+        <select id="city" name="city" value={formData.city} onChange={handleChange}>
+          <option value="">-- Select City --</option>
+          <option value="gorakhpur">Gorakhpur</option>
+          <option value="deoria">Deoria</option>
+          <option value="lucknow">Lucknow</option>
+          <option value="basti">Basti</option>
+          <option value="delhi">Delhi</option>
+        </select>
 
-        <label htmlFor="city">City:</label>
-        <input type="text" id="city" name="city" value={formData.city} onChange={handleChange} />
+
+
 
         <label htmlFor="address">Address:</label>
         <input type="text" id="address" name="address" value={formData.address} onChange={handleChange} />
