@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ContactUs.css';
 
 function ContactUs() {
-
+  const [successMessage, setSuccessMessage] = useState('');
+  
   const submitForm = (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -13,7 +14,10 @@ function ContactUs() {
     })
     .then(response => response.text())
     .then(data => {
-      console.log(data); // You can handle the response here
+      // Assuming the response is a success message
+      setSuccessMessage(data);
+      // Clearing form fields
+      event.target.reset();
     })
     .catch(error => {
       console.error('Error:', error);
@@ -39,7 +43,7 @@ function ContactUs() {
         <button type="submit">Submit</button>
       </form>
 
-      <div id="response"></div>
+      <div id="response">{successMessage}</div>
     </div>
   );
 }
