@@ -8,6 +8,8 @@ footer {
     position: static; /* Change position to static for proper placement */
     bottom: auto; /* Reset bottom position */
     bottom: 0;
+    
+
   }
   
   .socialIcons {

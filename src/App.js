@@ -8,7 +8,6 @@ import ContactUs from './component/ContactUs';
 import SignUpPage from './component/SignUp';
 import AddRoomPage from './component/addroom';
 import Team from './component/Team';
-import SearchResults from './component/SearchResults';
 
 
 import './App.css';
@@ -25,7 +24,6 @@ function App() {
           <Route path="/signup" element={<SignUpPage />} />
           <Route path="/addroom" element={<AddRoomPage />} />
           <Route path="/team" element={<Team/>} />
-          <Route path="/searchresult" element={<SearchResults/>} />
           
           
           {/* Add more routes for other pages/components */}

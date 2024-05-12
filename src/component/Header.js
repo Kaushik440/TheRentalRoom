@@ -27,6 +27,7 @@ function Header() {
   };
 
   return (
+    <>
     <header>
       <div className="login">
         {isAuthenticated && user && (
@@ -72,12 +73,17 @@ function Header() {
             <option value="home">HOME</option>
           </select>
           <button onClick={handleSearch}>Search</button>
+          
         </div>
       </nav>
 
-      {/* Render search results component if search button is clicked */}
-      {searchClicked && <SearchResults results={searchResults} />}
+      
     </header>
+    <div className='SearchResultContainer'>
+    {/* Render search results component if search button is clicked */}
+    {searchClicked && <SearchResults results={searchResults} />}
+    </div>
+    </>
   );
 }
 
