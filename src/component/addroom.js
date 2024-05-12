@@ -53,6 +53,7 @@ const AddRoomPage = () => {
       const data = await response.text();
       setSuccessMessage(data);
       setFormData({
+        house_name:'',
         type: '',
         furnishing: '',
         carpet_area: '',
@@ -78,14 +79,16 @@ const AddRoomPage = () => {
     <div className="container">
       <h2 className='addH'>Add Room for Rent</h2>
       <form onSubmit={handleSubmit}>
+      <label htmlFor="house_name">House Name:</label>
+        <input type="text" id="house_name" name="house_name" value={formData.house_name} onChange={handleChange} />
+        
         <label htmlFor="type">Type:</label>
         <select id="type" name="type" value={formData.type} onChange={handleChange}>
           <option value="">-- Select Type --</option>
           <option value="1bhk">1 BHK</option>
           <option value="2bhk">2 BHK</option>
-          <option value="1bhk_flat">1 BHK Flat</option>
-          <option value="2bhk_flat">2 BHK Flat</option>
-          <option value="villa">Villa</option>
+          <option value="3bhk">3 BHK</option>
+          <option value="home">Home</option>
         </select>
 
         <label htmlFor="furnishing">Furnishing Type:</label>
@@ -114,11 +117,11 @@ const AddRoomPage = () => {
         <label htmlFor="type">City:</label>
         <select id="city" name="city" value={formData.city} onChange={handleChange}>
           <option value="">-- Select City --</option>
-          <option value="gorakhpur">Gorakhpur</option>
-          <option value="deoria">Deoria</option>
-          <option value="lucknow">Lucknow</option>
-          <option value="basti">Basti</option>
-          <option value="delhi">Delhi</option>
+          <option value="Gorakhpur">Gorakhpur</option>
+          <option value="Deoria">Deoria</option>
+          <option value="Lucknow">Lucknow</option>
+          <option value="Basti">Basti</option>
+          <option value="Delhi">Delhi</option>
         </select>
 
 

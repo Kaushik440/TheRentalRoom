@@ -1,0 +1,8 @@
+.card {
+    margin-left: 80px;
+    width: 20rem; /* or width: 300px; - choose one */
+  }
+  .card img{
+    height: 238px;
+    width: 318px;
+  }
