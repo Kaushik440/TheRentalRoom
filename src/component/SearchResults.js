@@ -46,12 +46,11 @@ function SearchResults({ results }) {
                   <p class="card-text"></p>
                   <p class="card-text"><pre>Address: {result.address}    City: {result.city} </pre></p>
                   <p class="card-text"><pre>Price: {result.price}                         Room Type: {result.type} </pre></p>     
-                  <p class="card-text"><pre>Total Area: {result.carpet_area}                          Total Floor: {result.total_floor}</pre></p>     
-                  <p class="card-text"><pre>Floor Number: {result.floor_number}                         Furnishing: {result.furnishing}</pre></p> 
+                  <p class="card-text"><pre>Total Area: {result.carpet_area}                   Total Floor: {result.total_floor}</pre></p>     
+                  <p class="card-text"><pre>Floor Number: {result.floor_number}                Furnishing: {result.furnishing}</pre></p> 
                   <p class="card-texto">Owner Name: {result.owner_name}</p>    
                   <p class="card-text"><pre>Email address: {result.email} </pre></p>
-                  <p class="card-text">Contact Number: <a href="tel:+91{result.contact_number}">+91{result.contact_number}</a>   
-                  WhatsApp Number: 
+                  <p class="card-text">Contact Number: <a href="tel:+91{result.contact_number}">+91{result.contact_number}</a>    WhatsApp Number: 
     <a href="https://api.whatsapp.com/send?phone=91{result.contact_number}&text=Hello,%20I%20would%20like%20to%20chat" target="_blank">WhatsApp Web Chat</a>
                   </p>
                 </div>
