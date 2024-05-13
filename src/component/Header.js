@@ -23,7 +23,6 @@ function Header() {
     const data = await response.json();
     setSearchResults(data);
     setSearchClicked(true);
-    
   };
 
   return (
@@ -49,10 +48,10 @@ function Header() {
       </div>
       
       <nav className='navbar'>
-        <Link to="/" className="active">Home</Link>
-        <Link to="/save">Save</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
+        <Link to="/" className="active" class="navclass">Home</Link>
+        <Link to="/about" className="navclass">About</Link>
+        <Link to="/contact" className="navclass">Contact</Link>
+        
         <div className="search-container">
           <label htmlFor="city">City:</label>
           <select id="city" name="city">
@@ -73,7 +72,7 @@ function Header() {
             <option value="home">HOME</option>
           </select>
           <button onClick={handleSearch}>Search</button>
-          
+          <Link className='searchhide' to="/0">...</Link>
         </div>
       </nav>
 

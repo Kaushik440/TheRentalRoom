@@ -5,4 +5,25 @@
   .card{
     height:80vh;
   }
- 
+.card-title{
+  color: rgb(240, 11, 18);
+  font-weight: bold;
+  font-style: italic;
+}
+.card-text pre{
+  font-size:25px;
+  font-weight:400;
+  
+  
+}
+.card-text {
+  font-size:25px;
+  font-weight:400;
+
+}
+.card-texto{
+  font-size:25px;
+  font-weight:bold;
+  font-style: italic;
+
+}

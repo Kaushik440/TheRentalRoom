@@ -6,23 +6,31 @@ body {
   font-family: Arial, sans-serif;
 }
 
-nav a {
+
+.searchhide
+{ 
+  text-decoration: none;
+  text-align: right;
+  margin-top: 30vh;
+  color:#efe9eb;
+}
+.navclass {
   margin-top: 30vh;
   float: left;
   display: block;
-  color: rgb(126, 69, 241);
+  color: rgb(79, 6, 227);
   text-align: center;
   padding: 10px 10px;
   text-decoration: none;
 }
 
-nav a:hover {
+.navclass:hover {
   background-color: #ca1010;
   color: black;
   text-transform: uppercase;
 }
 
-nav a.active {
+.active {
   background-color: #4caf50;
   color: rgb(20, 19, 19);
 }
@@ -46,15 +54,15 @@ nav a.active {
   padding: 6px 10px;
   margin-top: 8px;
   margin-bottom: 8px;
-  margin-right: 16px;
-  background: #0a06d3;
-  font-size: 17px;
+  margin-right: 0px;
+  background: #0703f1;
+  font-size: 20px;
   border: none;
   cursor: pointer;
 }
 
 .search-container button:hover {
-  background-color: #b92957;
+  background-color: #07ee8e;
 }
 
 /* Adjusting header styles */

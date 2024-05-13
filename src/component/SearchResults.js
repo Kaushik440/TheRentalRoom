@@ -41,24 +41,18 @@ function SearchResults({ results }) {
               </div>
               <div class="col-md-8">
                 <div class="card-body">
+                
                   <h3 class="card-title">House Name : {result.house_name}</h3>
-                  <p class="card-text">Owner: {result.owner_name}</p>
-                  <p class="card-text">Address: {result.address}</p>
-                  <p class="card-text">City: {result.city}</p>
-                  <p class="card-text">Price: {result.price}</p>
-                  <p class="card-text">Room Type: {result.type}</p>
-                  <p class="card-text">Total Area: {result.carpet_area}</p>
-                  <p class="card-text">Total Floor: {result.total_floor}</p>
-                  <p class="card-text">Floor Number: {result.floor_number}</p>
-                  <p class="card-text">Furnishing: {result.furnishing}</p>
-                  <p class="card-text">Email address {result.email}</p>
-                  <p class="card-text">
-                    Contact Number: {result.contact_number}
-                  </p>
-                  <p class="card-text">
-                    <small class="text-body-secondary">
-                      Last updated 3 mins ago
-                    </small>
+                  <p class="card-text"></p>
+                  <p class="card-text"><pre>Address: {result.address}    City: {result.city} </pre></p>
+                  <p class="card-text"><pre>Price: {result.price}                         Room Type: {result.type} </pre></p>     
+                  <p class="card-text"><pre>Total Area: {result.carpet_area}                          Total Floor: {result.total_floor}</pre></p>     
+                  <p class="card-text"><pre>Floor Number: {result.floor_number}                         Furnishing: {result.furnishing}</pre></p> 
+                  <p class="card-texto">Owner Name: {result.owner_name}</p>    
+                  <p class="card-text"><pre>Email address: {result.email} </pre></p>
+                  <p class="card-text">Contact Number: <a href="tel:+91{result.contact_number}">+91{result.contact_number}</a>   
+                  WhatsApp Number: 
+    <a href="https://api.whatsapp.com/send?phone=91{result.contact_number}&text=Hello,%20I%20would%20like%20to%20chat" target="_blank">WhatsApp Web Chat</a>
                   </p>
                 </div>
               </div>
