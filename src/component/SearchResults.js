@@ -80,14 +80,13 @@ function SearchResults({ results }) {
                   <p class="card-text">
                   City: {result.city} </p>
                   <p class="card-text">
-                    <pre> Price: {result.price}   Room Type: {result.type} </pre>
+                  <pre> Price: {result.price}   Room Type: {result.type} </pre>
                   </p>
                   <p class="card-text">
-                    <pre>
-                      Total Area: {result.carpet_area}   Total Floor: {result.total_floor}</pre>
+                  <pre>Total Area: {result.carpet_area}   Total Floor: {result.total_floor}</pre>
                   </p>
                   <p class="card-text">
-                    <pre> Floor Number: {result.floor_number}   Furnishing:{result.furnishing} </pre>
+                  <pre> Floor Number: {result.floor_number}   Furnishing:{result.furnishing} </pre>
                   </p>
                   <p class="card-texto">Owner Name: {result.owner_name}</p>
                   <p class="card-text"> <pre>Email address: {result.email} </pre>
