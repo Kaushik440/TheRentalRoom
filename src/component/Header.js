@@ -79,7 +79,6 @@ function Header() {
               <option value="Deoria">Deoria</option>
               <option value="Basti">Basti</option>
               <option value="Lucknow">Lucknow</option>
-              <option value="Delhi">Delhi</option>
               {/* Add more cities as needed */}
             </select>
             <label htmlFor="type">Room Type:</label>

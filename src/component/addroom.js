@@ -81,7 +81,6 @@ const AddRoomPage = () => {
       <form onSubmit={handleSubmit}>
       <label htmlFor="house_name">House Name:</label>
         <input type="text" id="house_name" name="house_name" value={formData.house_name} onChange={handleChange} />
-        
         <label htmlFor="type">Type:</label>
         <select id="type" name="type" value={formData.type} onChange={handleChange}>
           <option value="">-- Select Type --</option>
@@ -121,12 +120,7 @@ const AddRoomPage = () => {
           <option value="Deoria">Deoria</option>
           <option value="Lucknow">Lucknow</option>
           <option value="Basti">Basti</option>
-          <option value="Delhi">Delhi</option>
         </select>
-
-
-
-
         <label htmlFor="address">Address:</label>
         <input type="text" id="address" name="address" value={formData.address} onChange={handleChange} />
 
@@ -156,11 +150,11 @@ const AddRoomPage = () => {
           {formData.image2 && <img src={URL.createObjectURL(formData.image2)} alt="Preview 2" />}
           {formData.image3 && <img src={URL.createObjectURL(formData.image3)} alt="Preview 3" />}
         </div>
-
         <button type="submit">Submit</button>
-      </form>
-      <div id="error-message" className="error-message">{errorMessage}</div>
+        <div id="error-message" className="error-message">{errorMessage}</div>
       <div id="success-message" className="success-message">{successMessage}</div>
+      </form>
+     
     </div>
   );
 };
