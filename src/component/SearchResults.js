@@ -78,7 +78,7 @@ function SearchResults({ results }) {
                     <pre>  Address: {result.address} </pre>
                   </p>
                   <p class="card-text">
-                  City: {result.city} </p>
+                  <pre>   City: {result.city}</pre> </p>
                   <p class="card-text">
                   <pre> Price: {result.price}   Room Type: {result.type} </pre>
                   </p>
@@ -92,10 +92,10 @@ function SearchResults({ results }) {
                   <p class="card-text"> <pre>Email address: {result.email} </pre>
                   </p> 
                   <p class="card-text">
-                    Contact Number:{" "}
+                    <pre>Contact Number:{" "}
                     <a href="tel:+91{result.contact_number}">
                       +91{result.contact_number}
-                    </a>
+                    </a></pre>
                   </p>
                 </div>
               </div>

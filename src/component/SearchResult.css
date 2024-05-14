@@ -6,13 +6,14 @@
     height:80vh;
   }
 .card-title{
-  color: rgb(240, 11, 18);
+  color: rgb(10, 10, 10);
   font-weight: bold;
-  font-style: italic;
+  font-style: bold;
 }
 .card-text pre{
   font-size:20px;
   font-weight:400;
+  text-align: center;
   
   
 }
@@ -24,6 +25,37 @@
 .card-texto{
   font-size:20px;
   font-weight:bold;
-  font-style: italic;
+  font-style:bold;
+  text-align: center;
 
 }
+.card-body{
+  background-color: #ADBBDA;
+}
+.card{
+  display: flex;
+    border: 2px solid black;
+    border-color: black;
+    border-style: solid;
+    justify-content: space-between;
+    width: 1260px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-color: #7091E6;
+    overflow: hidden;
+    
+    box-shadow: 3px 5px 10px #EDE8F5;
+   
+  }
+  
+.carousel-inner{
+  height: 415px;
+    max-width: 800px;
+    object-fit: cover; /* Ensures images maintain aspect ratio and fill the container */
+    border-image: round;
+    border-color: black;
+    border-radius: 15px;
+    transition: all 0.2s linear 0s;
+box-shadow: 1px 1px 10px black;
+  }
+
