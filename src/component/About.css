@@ -1,19 +1,18 @@
 /* Additional styles specific to the About page can be added here */
 .about-section {
-    margin: 10px;
+    margin-top: 1px;
+    margin: 1px;
     padding: 40px;
+    background-color: #7091E6;
     text-align: justify;
   }
   .about-section h2 {
     text-decoration: underline;
-    color: #000;
+    color: #f10c0c;
     font-size: 28px;
     margin-bottom: 15px;
     text-align: center;
   }
-  .about-section p {
-    font-size: large;
-    margin-bottom: 25px;
-  }
+
   
   

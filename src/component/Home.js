@@ -25,7 +25,7 @@ function Home() {
   </div>
 </div>
 
-      <h3 className="ourcollection">Our Collections</h3>
+      <h3 id="ourcollection">Our Collections</h3>
       <div className="container3">
         <div className="room">
           <img src={BHK1} alt="Single Room" />

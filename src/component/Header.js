@@ -59,7 +59,7 @@ function Header() {
             </div>
           )}
         </div>
-      <h1>Let Me Rent</h1>
+      <h1>LETMERENT</h1>
        
         <nav>
           <Link to="/" className="active" class="navclass">
