@@ -1,6 +1,7 @@
 /* Additional styles specific to the About page can be added here */
 .about-section {
-    margin: 10px;
+    margin-top: 1px;
+    margin: 1px;
     padding: 40px;
     background-color: #121111;
     text-align: justify;
