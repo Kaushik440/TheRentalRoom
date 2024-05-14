@@ -43,13 +43,39 @@ function SignupPage() {
       }),
     })
     .then(response => response.text())
-    .then(data => {
-      console.log(data); // Log the response from the backend
-      // Handle success or error messages from the backend accordingly
+    .then(data => {  
+      if (data === 'Contact number already exists') {
+        alert(data);
+        setUsername('');
+        setContactNumber('');
+        setEmail('');
+        setPassword('');
+        setRePassword('');}
+        else {
+          console.log(data); // Log the response from the backend
+          // Handle success or error messages from the backend accordingly
+        }
+      // Log the response from the backend
+      console.log(data);
+      // Handle success
+      if (data === "Signup successful") {
+        // Clear all fields
+        setUsername('');
+        setContactNumber('');
+        setEmail('');
+        setPassword('');
+        setRePassword('');
+        // Show alert
+        alert("Signup successful");
+      } else {
+        // Handle error messages
+        setError(data);
+      }
     })
     .catch(error => {
       console.error('Error:', error);
       // Handle any errors that occur during the fetch operation
+      setError("Error occurred during signup");
     });
   };
 
