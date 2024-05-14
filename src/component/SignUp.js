@@ -1,136 +1,115 @@
 import React, { useState } from 'react';
-import './Header.css';
 
-const SignUpPage = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    contactNumber: '',
-    securityQuestion: '',
-    newPassword: '',
-    confirmPassword: '',
-  });
+function SignupPage() {
+  const [username, setUsername] = useState('');
+  const [contactNumber, setContactNumber] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [rePassword, setRePassword] = useState('');
+  const [error, setError] = useState('');
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
+  const validatePassword = (password) => {
+    const regex = /^(?=.*[a-zA-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    return regex.test(password);
+  };
+
+  const handleSignup = () => {
+    if (!username || !contactNumber || !email || !password || !rePassword) {
+      setError('Please fill in all fields');
+      return;
+    }
+
+    if (password !== rePassword) {
+      setError('Passwords do not match');
+      return;
+    }
+
+    if (!validatePassword(password)) {
+      setError('Password must contain at least 8 characters, 1 number, 1 symbol, and 1 letter');
+      return;
+    }
+
+    // If all validations pass, send data to PHP backend
+    fetch('http://localhost/React-php/signup.php', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        username,
+        contactNumber,
+        email,
+        password,
+      }),
+    })
+    .then(response => response.text())
+    .then(data => {
+      console.log(data); // Log the response from the backend
+      // Handle success or error messages from the backend accordingly
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      // Handle any errors that occur during the fetch operation
     });
   };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission, e.g., send data to server
-    console.log(formData);
-  };
-
-  const handleReset = () => {
-    setFormData({
-      name: '',
-      email: '',
-      contactNumber: '',
-      securityQuestion: '',
-      newPassword: '',
-      confirmPassword: '',
-    });
-  };
-
-  const { newPassword, confirmPassword } = formData;
-
-  // Validate passwords match
-  const passwordsMatch = newPassword === confirmPassword;
 
   return (
-      <div>
-        <h2 id="SignH">Sign Up</h2>
-        <form onSubmit={handleSubmit} className='SignUp1'>
-          <label>
-            Name:
-            <input
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-            />
-          </label>
-          <br />
-          <label>
-            Email:
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-            />
-          </label>
-          <br />
-          <label>
-            ContactNumber:
-            <input
-              type="text"
-              name="contactNumber"
-              value={formData.contactNumber}
-              onChange={handleChange}
-            />
-          </label>
-          <br />
-          <label>
-            New Password:
-            <br/>
-            <input
-              type="password"
-              name="newPassword"
-              value={newPassword}
-              onChange={handleChange}
-            />
-          </label>
-          <label>
-            Confirm Password:
-            <br/>
-            <input
-              type="password"
-              name="confirmPassword"
-              value={confirmPassword}
-              onChange={handleChange}
-              style={{ borderColor: passwordsMatch ? 'green' : 'red' }}
-            />
-            {!passwordsMatch && <p>Passwords do not match!</p>}
-          </label>
-          <label>
-            Security Question:
-            <br/>
-            <select
-            id="secQue"
-              name="securityQuestion"
-              value={formData.securityQuestion}
-              onChange={handleChange}
-            >
-              <option value="">-- Select One --</option>
-              <option value="What is your mother's maiden name?">
-                What is your mother's maiden name?
-              </option>
-              <option value="What city were you born in?">
-                What city were you born in?
-              </option>
-              <option value="What is your favorite food?">
-                What is your favorite food?
-              </option>
-            </select>
-          </label>
-          <br/>
-          <button type="submit" className='buttonsignUp' disabled={!passwordsMatch}>
-            Submit
-          </button>
-          <button type="button" className='buttonsignUp' onClick={handleReset}>
-            Reset
-          </button>
-          <p>
-            Already have an account? <a href="/login"><span className='aclogin'>Login</span></a>
-          </p>
-        </form>
-      </div>
+    <div>
+      <h2>Sign Up</h2>
+      {error && <p style={{ color: 'red' }}>{error}</p>}
+      <form>
+        <div>
+          <label>Username:</label>
+          <input
+            type="text"
+            name="username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
+        </div>
+        <div>
+          <label>Contact Number:</label>
+          <input
+            type="text"
+            name="contactNumber"
+            value={contactNumber}
+            onChange={(e) => setContactNumber(e.target.value)}
+          />
+        </div>
+        <div>
+          <label>Email:</label>
+          <input
+            type="email"
+            name="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
+        <div>
+          <label>Password:</label>
+          <input
+            type="password"
+            name="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+        </div>
+        <div>
+          <label>Re-Enter Password:</label>
+          <input
+            type="password"
+            name="repassword"
+            value={rePassword}
+            onChange={(e) => setRePassword(e.target.value)}
+          />
+        </div>
+        <button type="button" onClick={handleSignup}>
+          Sign Up
+        </button>
+      </form>
+      <p>Already have an account? <a href="/login">Login</a></p>
+    </div>
   );
-};
+}
 
-export default SignUpPage;
+export default SignupPage;
