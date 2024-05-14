@@ -18,7 +18,7 @@ p.teamheada{
         
     }
     .containerteam1{
-        background-color: #ccc;
+        background-color: #7091E6;
       /*  background-image: url('photo-1554995207-c18c203602cb.avif');/* Replace 'your-image-url.jpg' with the path to your image */
         /*background-size: cover; /* Ensures the image covers the entire area */
         /* background-position: center; /* Centers the image */
@@ -35,6 +35,7 @@ p.teamheada{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; /* Arrange items with space between */
+    background-color: #7091E6;
 }
 .box {
     position: relative;
@@ -80,7 +81,7 @@ p.teamheada{
     opacity: 1;
 }
 h2 {
-    color: blue;
+    color: rgb(217, 217, 249);
     margin: 0;
     font-size: 1.5em;
     line-height: 1.2;

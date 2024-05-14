@@ -3,17 +3,18 @@
 { 
   text-decoration: none;
   text-align: right;
-  color:#e71058;
+  color:#111111;
 }
 .navclass {
  
   float: left;
   display: block;
-  color: #ca1010;
+  color: #0e0d0d;
   text-align: center;
   padding: 10px 10px;
-  text-decoration: none;
+  text-decoration:none;
   margin-left:30px;
+  font-weight:1000px;
 }
 
 .navclass:hover {
@@ -29,6 +30,7 @@
 
 .search-container {
   float: right;
+  color: #000;
 }
 
 .search-container select,
@@ -39,6 +41,7 @@
   margin-right: 20px;
   border: none;
   font-size: 17px;
+  color: #000;
 }
 
 .search-container button {
@@ -87,7 +90,7 @@ label {
   font-size: 1.4em;
   text-align: justify;
   text-decoration-thickness: 100px;
-  color: rgb(226, 13, 13);
+  color:#000;
   text-decoration-style: solid;
 }
 

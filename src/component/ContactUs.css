@@ -4,15 +4,15 @@
   justify-content: center;
   align-items: center;
   height: 103vh; /* Ensures the container takes the full height of the viewport */
-  background-color: black;
+  background-color:#7091E6;
 }
 
 form {
   width: 50%;
   background-color: #fff;
   padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: 2px 2px 15px black;
 }
 
 form label {
@@ -43,4 +43,8 @@ form button {
 #response {
   margin-top: 20px;
   text-align: center;
+}
+.text-center{
+  color: black;
+  font-size:larger;
 }
