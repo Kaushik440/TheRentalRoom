@@ -3,9 +3,9 @@ import BHK1 from "./images/1bhk.jpg";
 import BHK2 from "./images/2bhk.jpg";
 import BHK3 from "./images/3bhk.jpg";
 import Homeimg from "./images/Home.jpg";
-import GKP from "./images/gkp.jpg";
-import Lucknow from "./images/Lucknow.jpg";
-import Varanasi from "./images/varanasi.jpg"
+import RENT1 from "./images/rent1.jpg";
+import RENT2 from "./images/rent2.jpg";
+import RENT3 from "./images/rent3.jpg";
 import './Home.css';
 
 function Home() {
@@ -14,13 +14,13 @@ function Home() {
       <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
   <div className="carousel-inner">
     <div class="carousel-item active">
-      <img src={Lucknow} className="d-block w-100" alt="..."/>
+      <img src={RENT2} className="d-block w-100" alt="..."/>
     </div>
     <div class="carousel-item">
-      <img src={GKP} className="d-block w-100" alt="..."/>
+      <img src={RENT1} className="d-block w-100" alt="..."/>
     </div>
     <div class="carousel-item">
-      <img src={Varanasi} className="d-block w-100" alt="..."/>
+      <img src={RENT3} className="d-block w-100" alt="..."/>
     </div>
   </div>
 </div>
