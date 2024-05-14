@@ -8,9 +8,6 @@ import ContactUs from './component/ContactUs';
 import SignUpPage from './component/SignUp';
 import AddRoomPage from './component/addroom';
 import Team from './component/Team';
-
-
-
 import './App.css';
 
 function App() {
@@ -18,6 +15,7 @@ function App() {
     <div className="App">
       <Router>
         <Header />
+        
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -25,7 +23,6 @@ function App() {
           <Route path="/signup" element={<SignUpPage />} />
           <Route path="/addroom" element={<AddRoomPage />} />
           <Route path="/team" element={<Team/>} />
-          
           
           {/* Add more routes for other pages/components */}
         </Routes>

@@ -31,7 +31,7 @@ function Header() {
   return (
     <>
       <header>
-        <div className="login">
+      <div className="login">
           {isAuthenticated && user && (
             <div>
               <p className="username">{user.name}</p>
@@ -59,8 +59,9 @@ function Header() {
             </div>
           )}
         </div>
-
-        <nav className="navbar">
+      <h1>Let Me Rent</h1>
+       
+        <nav>
           <Link to="/" className="active" class="navclass">
             Home
           </Link>
@@ -70,7 +71,6 @@ function Header() {
           <Link to="/contact" className="navclass">
             Contact
           </Link>
-
           <div className="search-container">
             <label htmlFor="city">City:</label>
             <select id="city" name="city">
@@ -90,9 +90,9 @@ function Header() {
               <option value="1bhk">3BHK</option>
               <option value="home">HOME</option>
             </select>
-            <button onClick={handleSearch}>Search</button>
+           
             <Link className="searchhide" to="/0">
-              ...
+              {/*SSSSsss */} <button onClick={handleSearch}>Search</button>
             </Link>
           </div>
         </nav>
