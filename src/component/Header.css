@@ -71,15 +71,17 @@ h1{
   font-style:CURSIVE;
   
 }
-.Buttonlogin {
+.login {
   margin-top: 0px;
+  margin-right: 10px;
   float: right;
+  font-size: 20px;
   font-family: Arial;
-  color: #0e15e2;
+  color: #0f0f10;
   text-decoration: none;
 }
 
-.Buttonlogin:hover {
+.login:hover {
   color: #c40a5e; /* Changed color on hover */
 }
 .username{

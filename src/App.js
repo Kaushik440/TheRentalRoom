@@ -9,7 +9,7 @@ import SignUpPage from './component/SignUp';
 import AddRoomPage from './component/addroom';
 import Team from './component/Team';
 import Loginu from'./component/loginu';
-
+import Adminlogin from './component/Adminlogin';
 import './App.css';
 
 function App() {
@@ -26,6 +26,8 @@ function App() {
           <Route path="/addroom" element={<AddRoomPage />} />
           <Route path="/team" element={<Team/>} /> 
           <Route path="/loginu" element={<Loginu/>} />
+          <Route path="/adminlogin" element={<Adminlogin/>} />
+
           {/* Add more routes for other pages/components */}
         </Routes>
         <Footer />

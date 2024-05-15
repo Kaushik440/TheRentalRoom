@@ -31,34 +31,9 @@ function Header() {
   return (
     <>
       <header>
-      <div className="login">
-          {isAuthenticated && user && (
-            <div>
-              <p className="username">{user.name}</p>
-            </div>
-          )}
-          {isAuthenticated ? (
-            <div>
-              <button
-                className="Buttonlogin"
-                onClick={() =>
-                  logout({ logoutParams: { returnTo: window.location.origin } })
-                }
-              >
-                Log Out
-              </button>
-            </div>
-          ) : (
-            <div>
-              <button
-                className="Buttonlogin"
-                onClick={() => loginWithRedirect()}
-              >
-                Log In
-              </button>
-            </div>
-          )}
-        </div>
+      <Link to="/loginu" className="login">
+            Login
+          </Link>
       <h1>LETMERENT</h1>
        
         <nav>
@@ -71,6 +46,10 @@ function Header() {
           <Link to="/contact" className="navclass">
             Contact
           </Link>
+          <Link to="/adminlogin" className="navclass">
+            Admin Login
+          </Link>
+          
           <div className="search-container">
             <label htmlFor="city">City:</label>
             <select id="city" name="city">
