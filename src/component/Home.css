@@ -8,7 +8,7 @@
   }
   
   .room {
-    width: 400px;
+    width: 450px;
     margin: 30px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -40,7 +40,7 @@
   }
   .room img{
     height: 245px;
-  width: 370px;
+  width: 400px;
   border-radius: 20px;
   transition: all 0.6s linear 0s;
   }
