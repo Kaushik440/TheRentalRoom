@@ -12,14 +12,14 @@ function Home() {
   return (
     <div >
       <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
-  <div className="carousel-inner1">
-    <div className="carousel-item active1">
+  <div className="carousel-inner">
+    <div className="carousel-item active">
       <img src={RENT2} className="d-block w-100" alt="..."/>
     </div>
     <div className="carousel-item">
       <img src={RENT1} className="d-block w-100" alt="..."/>
     </div>
-    <div className="carousel-item1">
+    <div className="carousel-item">
       <img src={RENT3} className="d-block w-100" alt="..."/>
     </div>
   </div>

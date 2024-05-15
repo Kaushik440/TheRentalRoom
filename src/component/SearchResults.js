@@ -15,7 +15,7 @@ function SearchResults({ results }) {
                     className="carousel slide"
                     data-bs-ride="carousel"
                   >
-                    <div className="carousel-inner">
+                    <div className="carousel-inner css" >
                       {result.image1_url && (
                         <div className="carousel-item active">
                           <img

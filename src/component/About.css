@@ -2,9 +2,10 @@
 .about-section {
     margin-top: 1px;
     margin: 1px;
-    padding: 40px;
+    padding: 0px;
     background-color: #7091E6;
     text-align: justify;
+   
   }
   .about-section h2 {
     text-decoration: underline;
