@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-
+import { Link } from "react-router-dom";
 const Adminlogin = () => {
   const [contactNumber, setContactNumber] = useState('');
   const [password, setPassword] = useState('');
@@ -27,7 +27,7 @@ const Adminlogin = () => {
 
   return (
     <div>
-      <h2>Login</h2>
+      <h2> Admin Login</h2>
       <form onSubmit={handleSubmit}>
         <div>
           <label>Contact Number</label>
@@ -46,6 +46,9 @@ const Adminlogin = () => {
           />
         </div>
         <button type="submit">Login</button>
+        <Link to="/adminsignup">
+            SignUp
+          </Link>
       </form>
       {message && <p>{message}</p>}
     </div>
