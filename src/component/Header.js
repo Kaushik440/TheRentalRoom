@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { useAuth0 } from "@auth0/auth0-react";
 import "./Header.css";
 import SearchResults from "./SearchResults";
 
 function Header() {
-  const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
   const [searchResults, setSearchResults] = useState([]);
   const [searchClicked, setSearchClicked] = useState(false);
 
@@ -31,13 +29,13 @@ function Header() {
   return (
     <>
       <header>
-      <Link to="/loginu" className="login">
-            Login
-          </Link>
-      <h1>LETMERENT</h1>
-       
+        <Link to="/loginu" className="login">
+          Login
+        </Link>
+        <h1>LETMERENT</h1>
+
         <nav>
-          <Link to="/" className="active" class="navclass">
+          <Link to="/" className="active">
             Home
           </Link>
           <Link to="/about" className="navclass">
@@ -49,7 +47,7 @@ function Header() {
           <Link to="/adminlogin" className="navclass">
             Admin Login
           </Link>
-          
+
           <div className="search-container">
             <label htmlFor="city">City:</label>
             <select id="city" name="city">
@@ -68,7 +66,7 @@ function Header() {
               <option value="1bhk">3BHK</option>
               <option value="home">HOME</option>
             </select>
-           
+
             <Link className="searchhide" to="/0">
               {/*SSSSsss */} <button onClick={handleSearch}>Search</button>
             </Link>

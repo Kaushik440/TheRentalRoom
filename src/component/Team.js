@@ -43,7 +43,7 @@ function Team() {
 
     <div className="box">
         <div className="imgBx">
-            <img src={0} alt="Placeholder Image"/>
+            <img src={Durgesh} alt="Placeholder Image"/>
         </div>
         <div className="containerteam">
             <h2 className='teamName'>Ankita</h2>

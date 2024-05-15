@@ -24,6 +24,13 @@
 }
 
 .active {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration:none;
+  margin-left:30px;
+  font-weight:1000px;
   background-color: #4caf50;
   color: rgb(20, 19, 19);
 }
