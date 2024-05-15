@@ -8,9 +8,9 @@ import ContactUs from './component/ContactUs';
 import SignUpPage from './component/SignUp';
 import AddRoomPage from './component/addroom';
 import Team from './component/Team';
+import Loginu from'./component/loginu';
 
 import './App.css';
-import LOGINU from './component/login';
 
 function App() {
   return (
@@ -24,9 +24,8 @@ function App() {
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/signup" element={<SignUpPage />} />
           <Route path="/addroom" element={<AddRoomPage />} />
-          <Route path="/team" element={<Team/>} />
-          <Route path="/loginu" element={<LOGINU/>} />
-          
+          <Route path="/team" element={<Team/>} /> 
+          <Route path="/loginu" element={<Loginu/>} />
           {/* Add more routes for other pages/components */}
         </Routes>
         <Footer />
