@@ -95,15 +95,15 @@ h1{
   color: #000;
 }
 
-label {
+/*label {
   font-size: 1.4em;
   text-align: justify;
   text-decoration-thickness: 100px;
   color:#000;
   text-decoration-style: solid;
 }
-
-h3 {
+*/
+/*h3 {
   color: #cc1c1c;
   text-align: center;
 }
@@ -114,40 +114,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-/* Add this CSS for smaller screens */
-.menu-icon {
-  display: none;
-  cursor: pointer;
-}
-
-.menu-links {
-  display: flex;
-  list-style: none;
-}
-
-.menu-links li {
-  margin-right: 20px;
-}
-/* Additional styles specific to the About page can be added here */
-
-
-/* Media query for smaller screens */
-@media only screen and (max-width: 768px) {
-  .menu-icon {
-    display: block;
-  }
-
-  .menu-links {
-    display: none;
-    flex-direction: column;
-  }
-
-  .menu-links.active {
-    display: flex;
-  }
-
+}*/
   /* Adjust footer padding for smaller screens */
   footer {
     padding: 20px 0;
@@ -156,28 +123,6 @@ h3 {
   /* styles.css */
 
 /* Existing styles remain unchanged */
-
-.menu-icon {
-  display: none;
-  cursor: pointer;
-}
-
-.menu-links {
-  display: flex;
-  list-style: none;
-  flex-direction: column;
-  background-color: #3D52A0; /* Background color for mobile menu */
-  padding: 20px;
-  position: absolute;
-  top: 100%; /* Position the menu below the header */
-  left: 0;
-  right: 0;
-  z-index: 1; /* Ensure menu appears above other content */
-}
-
-.menu-links li {
-  margin-bottom: 10px;
-}
 
 @media only screen and (max-width: 768px) {
   .menu-icon {
@@ -193,14 +138,14 @@ h3 {
   }
 }
 
-}
-buttonText{
+
+/*buttonText{
   color: #000;
 }
 .addH{
   margin-top: 10px;
   margin-left: 10%;
-}
+}*/
 
 .SearchResultContainer{
   margin-top: 10px;

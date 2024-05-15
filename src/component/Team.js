@@ -7,47 +7,47 @@ import './Team.css';
 function Team() {
   return (
     <div>
-      <div class="containerteam1">
-    <p class="teamheada">Our Team</p>
+      <div className="containerteam1">
+    <p className="teamheada">Our Team</p>
       <p className='description'>Meet our amazing team members...</p>
-<div class="contentbox">
-    <div class="box">
-        <div class="imgBx">
+<div className="contentbox">
+    <div className="box">
+        <div className="imgBx">
             <img src={kaushikp} alt="Placeholder Image"/>
         </div>
-        <div class="containerteam">
-            <h2>Kaushik Pandey</h2>
-            <span>Web Designer/</span>
+        <div className="containerteam">
+            <h2 className='teamName'>Kaushik Pandey</h2>
+            <span >Front end developer</span>
         </div>
     </div>
 
-    <div class="box">
-        <div class="imgBx">
+    <div className="box">
+        <div className="imgBx">
             <img src={Shobhit}alt="Placeholder Image"/>
         </div>
-        <div class="containerteam">
-            <h2>Shobhit Singh</h2>
-            <span>Web Designer</span>
+        <div className="containerteam">
+            <h2 className='teamName'>Shobhit Singh</h2>
+            <span >Backend Developer</span>
         </div>
     </div>
 
-    <div class="box">
-        <div class="imgBx">
+    <div className="box">
+        <div className="imgBx">
             <img src={Durgesh} alt="Placeholder Image"/>
         </div>
-        <div class="containerteam">
-            <h2>Durgesh Pandey</h2>
-            <span>Web Designer</span>
+        <div className="containerteam">
+            <h2 className='teamName'>Durgesh Pandey</h2>
+            <span> Frontend Developer</span>
         </div>
     </div>
 
-    <div class="box">
-        <div class="imgBx">
-            <img src="IMG-20240314-WA0223.jpg" alt="Placeholder Image"/>
+    <div className="box">
+        <div className="imgBx">
+            <img src={0} alt="Placeholder Image"/>
         </div>
-        <div class="containerteam">
-            <h2>Ankita</h2>
-            <span>Web Designer</span>
+        <div className="containerteam">
+            <h2 className='teamName'>Ankita</h2>
+            <span>Backend Developer</span>
         </div>
     </div>
 </div>

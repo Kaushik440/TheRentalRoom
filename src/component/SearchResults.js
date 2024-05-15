@@ -71,27 +71,27 @@ function SearchResults({ results }) {
                   </div>
                 </div>
               </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h3 class="card-title">House Name : {result.house_name}</h3>
-                  <p class="card-text">
+              <div className="col-md-8">
+                <div className="card-body">
+                  <h3 className="card-title">House Name : {result.house_name}</h3>
+                  <p className="card-text">
                     <pre>  Address: {result.address} </pre>
                   </p>
-                  <p class="card-text">
+                  <p className="card-text">
                   <pre>   City: {result.city}</pre> </p>
-                  <p class="card-text">
+                  <p className="card-text">
                   <pre> Price: {result.price}   Room Type: {result.type} </pre>
                   </p>
-                  <p class="card-text">
+                  <p className="card-text">
                   <pre>Total Area: {result.carpet_area}   Total Floor: {result.total_floor}</pre>
                   </p>
-                  <p class="card-text">
+                  <p className="card-text">
                   <pre> Floor Number: {result.floor_number}   Furnishing:{result.furnishing} </pre>
                   </p>
-                  <p class="card-texto">Owner Name: {result.owner_name}</p>
-                  <p class="card-text"> <pre>Email address: {result.email} </pre>
+                  <p className="card-texto">Owner Name: {result.owner_name}</p>
+                  <p className="card-text"> <pre>Email address: {result.email} </pre>
                   </p> 
-                  <p class="card-text">
+                  <p className="card-text">
                     <pre>Contact Number:{" "}
                     <a href="tel:+91{result.contact_number}">
                       +91{result.contact_number}
