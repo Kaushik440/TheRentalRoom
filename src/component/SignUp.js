@@ -85,7 +85,7 @@ function SignupPage() {
     <div className='signform'>
       {error && <p style={{ color: 'red' }}>{error}</p>}
       <form>
-      <h2 class='text-center'>Sign Up</h2>
+      <h2 className='text-center'>Sign Up</h2>
         <div>
           <label>Username:</label>
           <input
