@@ -49,9 +49,9 @@ const Login = () => {
           />
         </div>
         <button type="submit">Login</button>
-       <p className="text-center1">  Click to Create Account <Link  to="/signup">
-            SignUp 
-          </Link> </p>
+        <Link class="text-center1" to="/signup">
+            SignUp
+          </Link>
       </form>
       {message && <p>{message}</p>}
     </div>

@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useAuth0 } from "@auth0/auth0-react";
 import "./Header.css";
 import SearchResults from "./SearchResults";
 
 function Header() {
+  const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
   const [searchResults, setSearchResults] = useState([]);
   const [searchClicked, setSearchClicked] = useState(false);
 
@@ -35,7 +37,7 @@ function Header() {
       <h1>LETMERENT</h1>
        
         <nav>
-          <Link to="/" className="active" >
+          <Link to="/" className="active" class="navclass">
             Home
           </Link>
           <Link to="/about" className="navclass">

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
-import './SignUp.css';
 
 function AdminSignUp() {
   const [username, setUsername] = useState('');
@@ -82,13 +81,10 @@ function AdminSignUp() {
   };
 
   return (
-    <div className='signform'>
-      
-      
+    <div>
+      <h2> Admin Sign Up</h2>
       {error && <p style={{ color: 'red' }}>{error}</p>}
       <form>
-      <h2 className="text-center">Admin Sign Up</h2>
-
         <div>
           <label>Username:</label>
           <input
@@ -137,11 +133,10 @@ function AdminSignUp() {
         <button type="button" onClick={handleSignup}>
           Sign Up
         </button>
-        <p className="text-center1">Already have an account? <Link to="/adminlogin">
+      </form>
+      <p>Already have an account? <Link to="/adminlogin">
             Login
           </Link></p>
-      </form>
-     
     </div>
   );
 }
