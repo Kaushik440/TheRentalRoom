@@ -27,7 +27,7 @@ function ContactUs() {
   return (
     <div className="containercontactform">
       <form id="contactForm" onSubmit={submitForm}>
-        <h2 class="text-center"><u>Contact Us</u></h2>
+        <h2 className="text-center"><u>Contact Us</u></h2>
         <label htmlFor="name">Name:</label>
         <input type="text" id="name" name="name" required />
 

@@ -17,6 +17,9 @@ p.teamheada{
         font-weight:lighter;
         
     }
+    .teamName{
+        color: rgb(54, 11, 226);
+    }
     .containerteam1{
         background-color: #7091E6;
       /*  background-image: url('photo-1554995207-c18c203602cb.avif');/* Replace 'your-image-url.jpg' with the path to your image */
@@ -80,12 +83,7 @@ p.teamheada{
 .box:hover .containerteam {
     opacity: 1;
 }
-h2 {
-    color: rgb(217, 217, 249);
-    margin: 0;
-    font-size: 1.5em;
-    line-height: 1.2;
-}
+
 span {
     font-size: 0.8em;
 }
