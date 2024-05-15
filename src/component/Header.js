@@ -35,11 +35,7 @@ function Header() {
         <h1>LETMERENT</h1>
 
         <nav>
-<<<<<<< HEAD
           <Link to="/" className="activec" >
-=======
-          <Link to="/" className="active">
->>>>>>> bf5303f4b2145c982c7e3d21c295000d2fdd0457
             Home
           </Link>
           <Link to="/about" className="navclass">
