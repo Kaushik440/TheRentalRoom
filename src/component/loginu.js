@@ -31,7 +31,7 @@ const Login = () => {
     <div className='loginform'>
       
       <form onSubmit={handleSubmit}>
-      <h2 class="text-center">Login</h2>
+      <h2 className="text-center">Login</h2>
         <div>
           <label>Contact Number</label>
           <input
