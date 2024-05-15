@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { Link } from "react-router-dom";
+import './loginu.css';
+
 const Login = () => {
   const [contactNumber, setContactNumber] = useState('');
   const [password, setPassword] = useState('');
@@ -26,9 +28,10 @@ const Login = () => {
   };
 
   return (
-    <div>
-      <h2>Login</h2>
+    <div className='loginform'>
+      
       <form onSubmit={handleSubmit}>
+      <h2 class="text-center">Login</h2>
         <div>
           <label>Contact Number</label>
           <input
@@ -46,7 +49,7 @@ const Login = () => {
           />
         </div>
         <button type="submit">Login</button>
-        <Link to="/signup">
+        <Link class="text-center1" to="/signup">
             SignUp
           </Link>
       </form>
