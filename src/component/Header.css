@@ -24,8 +24,15 @@
 }
 
 .active {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration:none;
+  margin-left:30px;
   background-color: #4caf50;
   color: rgb(20, 19, 19);
+  text-transform: uppercase;
 }
 
 .search-container {
@@ -146,6 +153,46 @@ h3 {
     padding: 20px 0;
     
   }
+  /* styles.css */
+
+/* Existing styles remain unchanged */
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-links {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  background-color: #3D52A0; /* Background color for mobile menu */
+  padding: 20px;
+  position: absolute;
+  top: 100%; /* Position the menu below the header */
+  left: 0;
+  right: 0;
+  z-index: 1; /* Ensure menu appears above other content */
+}
+
+.menu-links li {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-links {
+    display: none; /* Hide menu by default on smaller screens */
+  }
+
+  .menu-links.active {
+    display: flex; /* Show menu when active class is applied */
+  }
+}
+
 }
 buttonText{
   color: #000;

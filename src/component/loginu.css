@@ -11,5 +11,8 @@
       font-size: 25px;
   }
   .text-center1{
+    margin-top: 2px;
     align-items: center;
+    font-size: medium;
+    font-style: italic;
   }

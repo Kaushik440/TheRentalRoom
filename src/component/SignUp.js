@@ -134,7 +134,7 @@ function SignupPage() {
         <button type="button" onClick={handleSignup}>
           Sign Up
         </button>
-        <p class="text-center1">Already have an account? <Link to="/loginu">
+        <p className="text-center1">Already have an account? <Link to="/loginu">
             Login
           </Link></p>
       </form>

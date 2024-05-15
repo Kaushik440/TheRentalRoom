@@ -13,13 +13,13 @@ function Home() {
     <div >
       <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
   <div className="carousel-inner1">
-    <div class="carousel-item active1">
+    <div className="carousel-item active1">
       <img src={RENT2} className="d-block w-100" alt="..."/>
     </div>
-    <div class="carousel-item">
+    <div className="carousel-item">
       <img src={RENT1} className="d-block w-100" alt="..."/>
     </div>
-    <div class="carousel-item1">
+    <div className="carousel-item1">
       <img src={RENT3} className="d-block w-100" alt="..."/>
     </div>
   </div>
@@ -29,19 +29,19 @@ function Home() {
       <div className="container3">
         <div className="room">
           <img src={BHK1} alt="Single Room" />
-          <p>1BHK</p>
+          <p className=" roomtext">1BHK Room</p>
         </div>
         <div className="room">
           <img src={BHK2} alt="Double Room" />
-          <p>2BHK</p>
+          <p className="roomtext">2BHK Room</p>
         </div>
         <div className="room">
           <img src={BHK3} alt="Three Room" />
-          <p>3BHK</p>
+          <p className=" roomtext">3BHK Room</p>
         </div>
         <div className="room">
           <img src={Homeimg} alt="Home" />
-          <p>Home</p>
+          <p className=" roomtypetext">Home</p>
         </div>
       </div>
     </div>
