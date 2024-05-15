@@ -1,0 +1,15 @@
+.signform{
+  padding: 10px; /* Adjust padding as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120vh; /* Ensures the container takes the full height of the viewport */
+  background-color:#7091E6;
+}
+.text-center{
+    font-weight: 1000;
+    font-size: 25px;
+}
+.text-center1{
+    text-align: center;
+}
