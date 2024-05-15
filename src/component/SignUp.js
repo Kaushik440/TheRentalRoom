@@ -85,7 +85,7 @@ function SignupPage() {
     <div className='signform'>
       {error && <p style={{ color: 'red' }}>{error}</p>}
       <form>
-      <h2 class='text-center'>Sign Up</h2>
+      <h2 className='text-center'>Sign Up</h2>
         <div>
           <label>Username:</label>
           <input
@@ -134,7 +134,7 @@ function SignupPage() {
         <button type="button" onClick={handleSignup}>
           Sign Up
         </button>
-        <p className="text-center1">Already have an account? <Link to="/loginu">
+        <p class="text-center1">Already have an account? <Link to="/loginu">
             Login
           </Link></p>
       </form>

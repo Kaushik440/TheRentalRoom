@@ -29,13 +29,17 @@ function Header() {
   return (
     <>
       <header>
-      <Link to="/loginu" className="login">
-            Login
-          </Link>
-      <h1>LETMERENT</h1>
-       
+        <Link to="/loginu" className="login">
+          Login
+        </Link>
+        <h1>LETMERENT</h1>
+
         <nav>
+<<<<<<< HEAD
           <Link to="/" className="activec" >
+=======
+          <Link to="/" className="active">
+>>>>>>> bf5303f4b2145c982c7e3d21c295000d2fdd0457
             Home
           </Link>
           <Link to="/about" className="navclass">
@@ -47,7 +51,7 @@ function Header() {
           <Link to="/adminlogin" className="navclass">
             Admin Login
           </Link>
-          
+
           <div className="search-container">
             <label htmlFor="city">City:</label>
             <select id="city" name="city">
@@ -66,7 +70,7 @@ function Header() {
               <option value="1bhk">3BHK</option>
               <option value="home">HOME</option>
             </select>
-           
+
             <Link className="searchhide" to="/0">
               {/*SSSSsss */} <button onClick={handleSearch}>Search</button>
             </Link>

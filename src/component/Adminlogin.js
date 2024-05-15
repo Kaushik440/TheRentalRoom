@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { Link } from "react-router-dom";
-
+import './loginu.css';
 const Adminlogin = () => {
   const [contactNumber, setContactNumber] = useState('');
   const [password, setPassword] = useState('');
@@ -27,7 +27,7 @@ const Adminlogin = () => {
   };
 
   return (
-    <div  className='loginform'>
+    <div className='loginform'>
      
       <form onSubmit={handleSubmit}>
       <h2 className="text-center"> Admin Login</h2>
@@ -48,9 +48,9 @@ const Adminlogin = () => {
           />
         </div>
         <button type="submit">Login</button>
-        <p className="text-center1">  Click to Create Account <Link  to="/adminsignup">
-            SignUp 
-          </Link></p>
+        <Link  className="text-center1" to="/adminsignup">
+            SignUp
+          </Link>
       </form>
       {message && <p>{message}</p>}
     </div>
