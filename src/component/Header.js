@@ -55,7 +55,9 @@ function Header() {
 
           
         </nav>
-        <div className="search-container">
+        
+      </header>
+      <div className="search-container">
             <label htmlFor="city">City:</label>
             <select id="city" name="city">
               <option value="">-- Select City --</option>
@@ -78,7 +80,6 @@ function Header() {
               {/*SSSSsss */} <button onClick={handleSearch}>Search</button>
             </Link>
           </div>
-      </header>
       <div className="SearchResultContainer">
         {/* Render search results component if search button is clicked */}
         {searchClicked && <SearchResults results={searchResults} />}
