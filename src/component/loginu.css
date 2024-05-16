@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh; /* Ensures the container takes the full height of the viewport */
+    height: auto; /* Ensures the container takes the full height of the viewport */
     background-color:#7091E6;
     width: 100%;
   }
@@ -14,3 +14,4 @@
   .text-center1{
     align-items: center;
   }
+ 

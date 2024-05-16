@@ -6,7 +6,6 @@
   color:#111111;
 }
 .navclass {
- 
   float: left;
   display: block;
   color: #0e0d0d;
@@ -91,7 +90,7 @@ header {
 }
 
 .login:hover {
-  color: #c40a5e; /* Changed color on hover */
+  color: #c40a5e;
 }
 .username{
   color: #000;
@@ -107,25 +106,7 @@ label {
   color:#000;
   text-decoration-style: solid;
 }
-*/
-/*h3 {
-  color: #cc1c1c;
-  text-align: center;
-}
 
-.container1 {
-  background-color: #c8def5;
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}*/
-
-  /* Adjust footer padding for smaller screens */
-  footer {
-    padding: 20px 0;
-    
-  }
 @media only screen and (max-width: 768px) {
   .search-container {
     background-color: #3D52A0;
@@ -199,7 +180,7 @@ buttonText{
 .addH{
   margin-top: 10px;
   margin-left: 10%;
-}*/
+}
 
 .SearchResultContainer{
   margin-top: 10px;

@@ -1,7 +1,7 @@
 // src/About.js
 import React from 'react';
 import './About.css';
-import  abc from './images/WhatsApp Image 2024-04-17 at 12.13.18_28739dd3.jpg'; 
+import  abc from './images/aboutus image.jpg'; 
 
 const About = () => {
   return (
@@ -13,7 +13,7 @@ const About = () => {
         <h1>About Us</h1>
         <p>Welcome to our website! We are passionate about [your passion or business focus].</p>
         <p>Our mission is to [your mission statement]. We strive to provide the best [products/services] to our customers.</p>
-        <p>Contact us at: <a href="mailto:kaushikpandey440@gmail.com">contact@example.com</a></p>
+        <p>Contact us at: <a href="mailto:kaushikpandey440@gmail.com">Letmerent2024@gmail.com</a></p>
       </div>
     </div>
   );
