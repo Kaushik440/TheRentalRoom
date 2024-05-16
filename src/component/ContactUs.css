@@ -5,6 +5,8 @@
   align-items: center;
   height: 103vh; /* Ensures the container takes the full height of the viewport */
   background-color:#7091E6;
+  width: 100%;
+  
 }
 
 form {

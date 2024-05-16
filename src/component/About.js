@@ -5,8 +5,8 @@ function About() {
   return (
     <div>
       <main style={{ backgroundColor: "#aaeba7" }}>
-        <section className="about-section">
-          <h2 className=" aboutheader">About Us</h2>
+        <section className="about-section h2">
+          <h2 class="text-center">About Us</h2>
           <div className="card mb-3">
             <div className="row g-0">
               <div className="col-md-4">
