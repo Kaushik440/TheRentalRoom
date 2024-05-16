@@ -13,8 +13,8 @@
   text-align: center;
   padding: 10px 10px;
   text-decoration:none;
-  margin-left:30px;
-  font-weight:1000px;
+  margin-left:10px;
+  font-weight:400px;
 }
 
 .navclass:hover {
@@ -73,9 +73,12 @@ header {
   background-color: #3D52A0;
   
 }
-h1{
+.Letmerent{
   color: #000;
-  font-style:CURSIVE;
+  font-style: italic;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 1000;
   
 }
 .login {
@@ -115,6 +118,65 @@ h1{
   flex-wrap: wrap;
   justify-content: space-between;
 }*/
+/* General styles */
+
+
+/* Hamburger menu styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(232, 220, 220);
+  margin: 4px;
+}
+
+/* Hide the nav links and search container on small screens */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav .search-container {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+
+  nav ul li {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+}
+
   /* Adjust footer padding for smaller screens */
   footer {
     padding: 20px 0;

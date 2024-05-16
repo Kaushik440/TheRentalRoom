@@ -6,6 +6,11 @@ import SearchResults from "./SearchResults";
 function Header() {
   const [searchResults, setSearchResults] = useState([]);
   const [searchClicked, setSearchClicked] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   const handleSearch = async () => {
     const city = document.getElementById("city").value;
@@ -32,7 +37,7 @@ function Header() {
         <Link to="/loginu" className="login">
           Login
         </Link>
-        <h1>LETMERENT</h1>
+        <p className="Letmerent">LET ME RENT</p>
 
         <nav>
           <Link to="/" className="activec" >
@@ -48,7 +53,9 @@ function Header() {
             Admin Login
           </Link>
 
-          <div className="search-container">
+          
+        </nav>
+        <div className="search-container">
             <label htmlFor="city">City:</label>
             <select id="city" name="city">
               <option value="">-- Select City --</option>
@@ -71,7 +78,6 @@ function Header() {
               {/*SSSSsss */} <button onClick={handleSearch}>Search</button>
             </Link>
           </div>
-        </nav>
       </header>
       <div className="SearchResultContainer">
         {/* Render search results component if search button is clicked */}
