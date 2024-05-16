@@ -19,7 +19,6 @@ function App() {
   return (
     <div className="App">
       <Router>
-//     < ResetPassword/>
         <Header />
         
         <Routes>
@@ -32,8 +31,6 @@ function App() {
           <Route path="/loginu" element={<Loginu/>} />
           <Route path="/adminsignup" element={<AdminSignUp />} />
           <Route path="/adminlogin" element={<Adminlogin/>} />
-       //   <Route path="/forgotpassword" component={ForgotPassword} />
-       // <Route path="/reset-password/:token" component={ResetPassword} />
 
           {/* Add more routes for other pages/components */}
         </Routes>
