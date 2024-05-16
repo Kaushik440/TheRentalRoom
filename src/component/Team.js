@@ -2,6 +2,7 @@ import React from 'react';
 import kaushikp from './images/Kaushik.jpg';
 import Shobhit from './images/shobhit.jpg';
 import Durgesh from './images/durgesh.jpg';
+import Ankita from './images/Ankita.jpg';
 import './Team.css';
 
 function Team() {
@@ -43,7 +44,7 @@ function Team() {
 
     <div className="box">
         <div className="imgBx">
-            <img src={Durgesh} alt="Placeholder Image"/>
+            <img src={Ankita} alt="Placeholder Image"/>
         </div>
         <div className="containerteam">
             <h2 className='teamName'>Ankita</h2>
