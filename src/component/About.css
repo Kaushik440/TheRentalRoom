@@ -1,20 +1,58 @@
-/* Additional styles specific to the About page can be added here */
-.about-section {
-    margin-top: 1px;
-    margin: 1px;
-    padding: 0px;
-    background-color: #7091E6;
-    text-align:center;
-    width: 100%;
-   
+/* src/About.css */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-image {
+  flex: 1 1 40%;
+  max-width: 40%;
+  padding: 10px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-content {
+  flex: 1 1 60%;
+  max-width: 60%;
+  padding: 10px;
+}
+
+.about-container h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.about-container p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.about-container a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.about-container a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-image, .about-content {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
-  .about-section h2 {
-    text-decoration: underline;
-    color: #f10c0c;
-    font-size: 28px;
-    margin-bottom: 15px;
-    text-align: center;
+
+  .about-image {
+    margin-bottom: 20px;
   }
-  
-  
-  
+}
