@@ -120,108 +120,13 @@ label {
   flex-wrap: wrap;
   justify-content: space-between;
 }*/
-/* General styles */
-
-
-/* Hamburger menu styles */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.hamburger div {
-  width: 25px;
-  height: 3px;
-  background-color: rgb(232, 220, 220);
-  margin: 4px;
-}
-
-/* Hide the nav links and search container on small screens 
-nav ul {
-  list-style-type: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  margin: 0 10px;
-}
-
-nav .search-container {
-  display: flex;
-}
-
-@media (max-width: 768px) {
-  .hamburger {
-    display: flex;
-  }
-
-  nav ul {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: #333;
-    position: absolute;
-    top: 60px;
-    left: 0;
-  }
-
-  nav ul li {
-    text-align: center;
-    margin: 10px 0;
-  }
-
-  nav ul.active {
-    display: flex;
-  }
-
-}*/
 
   /* Adjust footer padding for smaller screens */
   footer {
     padding: 20px 0;
     
   }
-  /* styles.css */
-
-/* Existing styles remain unchanged */
-
-.menu-icon {
-  display: none;
-  cursor: pointer;
-}
-
-.menu-links {
-  display: flex;
-  list-style: none;
-  flex-direction: column;
-  background-color: #3D52A0; /* Background color for mobile menu */
-  padding: 20px;
-  position: absolute;
-  top: 100%; /* Position the menu below the header */
-  left: 0;
-  right: 0;
-  z-index: 1; /* Ensure menu appears above other content */
-}
-
-.menu-links li {
-  margin-bottom: 10px;
-}
-
 @media only screen and (max-width: 768px) {
-  .menu-icon {
-    display: block;
-  }
-
-  .menu-links {
-    display: none; /* Hide menu by default on smaller screens */
-  }
-
-  .menu-links.active {
-    display: flex; /* Show menu when active class is applied */
-  }
   .search-container {
     background-color: #3D52A0;
      color: #000;
@@ -261,6 +166,28 @@ nav .search-container {
     text-decoration-thickness: 10px;
     color:#000;
     text-decoration-style: solid;
+  }
+  .navclass {
+ 
+    float: left;
+    display: block;
+    color: #0e0d0d;
+    text-align: center;
+    padding: 6px 10px;
+    text-decoration:none;
+    margin-left:10px;
+    font-weight:400px;
+  }
+  .activec{
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 6px 10px;
+    text-decoration:none;
+    margin-left:15px;
+    font-weight:1000px;
+    background-color: #4caf50;
+    color: rgb(20, 19, 19);
   }
    
 }
