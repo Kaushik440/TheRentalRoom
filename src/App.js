@@ -11,12 +11,15 @@ import Team from './component/Team';
 import Loginu from'./component/loginu';
 import Adminlogin from './component/Adminlogin';
 import AdminSignUp from './component/AdminSignUp';
+//import ForgotPassword from './component/ForgotPassword'
+//import ResetPassword from './component/ResetPassword';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <Router>
+//     < ResetPassword/>
         <Header />
         
         <Routes>
@@ -29,6 +32,8 @@ function App() {
           <Route path="/loginu" element={<Loginu/>} />
           <Route path="/adminsignup" element={<AdminSignUp />} />
           <Route path="/adminlogin" element={<Adminlogin/>} />
+       //   <Route path="/forgotpassword" component={ForgotPassword} />
+       // <Route path="/reset-password/:token" component={ResetPassword} />
 
           {/* Add more routes for other pages/components */}
         </Routes>
