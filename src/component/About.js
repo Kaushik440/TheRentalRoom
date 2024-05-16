@@ -1,7 +1,7 @@
 // src/About.js
-import React from 'react';
-import './About.css';
-import  abc from './images/aboutus image.jpg'; 
+import React from "react";
+import "./About.css";
+import abc from "./images/aboutus image.jpg";
 
 const About = () => {
   return (
@@ -11,9 +11,22 @@ const About = () => {
       </div>
       <div className="about-content">
         <h1>About Us</h1>
-        <p>Welcome to our website! We are passionate about [your passion or business focus].</p>
-        <p>Our mission is to [your mission statement]. We strive to provide the best [products/services] to our customers.</p>
-        <p>Contact us at: <a href="mailto:kaushikpandey440@gmail.com">Letmerent2024@gmail.com</a></p>
+        <p>
+          Welcome to our website! We are passionate about LetMERENT
+        </p>
+        <p>
+          A Rental Room Search web application is a comprehensive solution for
+          modernizing the way people find rental accommodations. By leveraging
+          advanced technologies and user-centric design, it offers an efficient,
+          transparent, and secure platform for both tenants and landlords,
+          enhancing the overall rental experience..
+        </p>
+        <p>
+          Contact us at:{" "}
+          <a href="mailto:kaushikpandey440@gmail.com">
+            Letmerent2024@gmail.com
+          </a>
+        </p>
       </div>
     </div>
   );
