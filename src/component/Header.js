@@ -72,7 +72,7 @@ function Header() {
               <option value="">-- Select RoomType --</option>
               <option value="1bhk">1BHK</option>
               <option value="2bhk">2BHK</option>
-              <option value="1bhk">3BHK</option>
+              <option value="3bhk">3BHK</option>
               <option value="home">HOME</option>
             </select>
 
