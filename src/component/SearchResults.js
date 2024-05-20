@@ -88,7 +88,7 @@ function SearchResults({ results }) {
                 <p className="card-text">
                   <pre>Floor Number: {result.floor_number}   Furnishing: {result.furnishing}</pre>
                 </p>
-                <p className="card-text">Owner Name: {result.owner_name}</p>
+                <p className="card-text"><pre>      Owner Name: {result.owner_name}</pre></p>
                 <p className="card-text">
                   <pre>Email address: {result.email}</pre>
                 </p>
