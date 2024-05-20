@@ -11,8 +11,7 @@ import Team from './component/Team';
 import Loginu from'./component/loginu';
 import Adminlogin from './component/Adminlogin';
 import AdminSignUp from './component/AdminSignUp';
-//import ForgotPassword from './component/ForgotPassword'
-//import ResetPassword from './component/ResetPassword';
+import SearchResultsPage from './component/SearchResultsPage'; // New component for displaying search results
 import './App.css';
 
 function App() {
@@ -23,6 +22,7 @@ function App() {
         
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/search-results" element={<SearchResultsPage />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/signup" element={<SignUpPage />} />
