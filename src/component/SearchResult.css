@@ -30,16 +30,14 @@
   text-align: center;
 
 }
-.card-body{
-  background-color: #ADBBDA;
-}
+
 .card{
   display: flex;
-    border: 2px solid black;
+    border: 3px solid black;
     border-color: black;
     border-style: solid;
     justify-content: space-between;
-    width: 1260px;
+    width: 100%;
     margin-bottom: 10px;
     border-radius: 15px;
     background-color: #7091E6;
