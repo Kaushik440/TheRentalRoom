@@ -4,6 +4,7 @@
   }
   .card{
     height:80vh;
+    object-fit: cover;
   }
 .card-title{
   color: rgb(10, 10, 10);

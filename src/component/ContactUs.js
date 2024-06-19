@@ -18,6 +18,10 @@ function ContactUs() {
       setSuccessMessage("Message Submited Successfully");
       // Clearing form fields
       event.target.reset();
+       // Clear success message after 3 seconds
+       setTimeout(() => {
+        setSuccessMessage('');
+      }, 3000); // 3000 milliseconds = 3 seconds
     })
     .catch(error => {
       console.error('Error:', error);
