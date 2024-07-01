@@ -39,7 +39,7 @@ function ContactUs() {
         <input type="email" id="email" name="email" required />
 
         <label htmlFor="contactNumber">Contact Number:</label>
-        <input type="text" id="contactNumber" name="contactNumber" required />
+        <input type="Number" id="contactNumber" name="contactNumber" required />
 
         <label htmlFor="message">Message:</label>
         <textarea id="message" name="message" required></textarea>

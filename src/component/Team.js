@@ -14,7 +14,7 @@ function Team() {
 <div className="contentbox">
     <div className="box">
         <div className="imgBx">
-            <img src={kaushikp} alt="Placeholder Image"/>
+            <img src={kaushikp} alt="Placeholder"/>
         </div>
         <div className="containerteam">
             <h2 className='teamName'>Kaushik Pandey</h2>
@@ -24,7 +24,7 @@ function Team() {
 
     <div className="box">
         <div className="imgBx">
-            <img src={Shobhit}alt="Placeholder Image"/>
+            <img src={Shobhit}alt="Placeholder"/>
         </div>
         <div className="containerteam">
             <h2 className='teamName'>Shobhit Singh</h2>
@@ -34,7 +34,7 @@ function Team() {
 
     <div className="box">
         <div className="imgBx">
-            <img src={Durgesh} alt="Placeholder Image"/>
+            <img src={Durgesh} alt="Placeholder"/>
         </div>
         <div className="containerteam">
             <h2 className='teamName'>Durgesh Pandey</h2>
@@ -44,7 +44,7 @@ function Team() {
 
     <div className="box">
         <div className="imgBx">
-            <img src={Ankita} alt="Placeholder Image"/>
+            <img src={Ankita} alt="Placeholder"/>
         </div>
         <div className="containerteam">
             <h2 className='teamName'>Ankita</h2>
