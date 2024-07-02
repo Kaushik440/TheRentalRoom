@@ -37,6 +37,7 @@ const Login = () => {
           <input
             type="text"
             value={contactNumber}
+            placeholder='enter contact number'
             onChange={(e) => setContactNumber(e.target.value)}
           />
         </div>
@@ -44,12 +45,13 @@ const Login = () => {
           <label>Password</label>
           <input
             type="password"
+            placeholder='enter password'
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
         <button type="submit">Login</button>
-        <Link class="text-center1" to="/signup">
+        <Link className="text-center1" to="/signup">
             SignUp
           </Link>
       </form>

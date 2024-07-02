@@ -16,7 +16,7 @@ function Home() {
     <div className="carousel-item active">
       <img src={RENT2} className="d-block w-100" alt="..."/>
     </div>
-    <div class="carousel-item">
+    <div className="carousel-item">
       <img src={RENT1} className="d-block w-100" alt="..."/>
     </div>
     <div className="carousel-item">
