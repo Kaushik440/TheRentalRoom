@@ -54,8 +54,9 @@ const Login = () => {
         <Link className="text-center1" to="/signup">
             SignUp
           </Link>
+          {message && <p className='red'>{message}</p>}
       </form>
-      {message && <p>{message}</p>}
+     
     </div>
   );
 };
