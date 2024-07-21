@@ -158,5 +158,4 @@ const AddRoomPage = () => {
     </div>
   );
 };
-
 export default AddRoomPage;
