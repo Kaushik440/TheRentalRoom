@@ -12,6 +12,8 @@ import Loginu from'./component/loginu';
 import Adminlogin from './component/Adminlogin';
 import AdminSignUp from './component/AdminSignUp';
 import SearchResultsPage from './component/SearchResultsPage'; // New component for displaying search results
+import ErrorPage from"./component/ErrorPages";
+
 import './App.css';
 
 function App() {
@@ -23,6 +25,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/search-results" element={<SearchResultsPage />} />
+          <Route path="/error" element={<ErrorPage />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/signup" element={<SignUpPage />} />

@@ -1,0 +1,14 @@
+.containererrors{
+    background-color: aqua;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.error-image{
+  
+    align-items: center;
+    width: 50%;
+    height: 60vh;
+
+}

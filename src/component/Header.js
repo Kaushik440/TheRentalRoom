@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import ErrorPage from "./ErrorPages"; // Import the ErrorPage component
 import "./Header.css";
 
 function Header() {
@@ -7,24 +8,35 @@ function Header() {
   const navigate = useNavigate();
 
   const handleSearch = async () => {
-    const city = document.getElementById("city").value;
-    const type = document.getElementById("type").value;
+    try {
+      const city = document.getElementById("city").value;
+      const type = document.getElementById("type").value;
 
-    const response = await fetch(
-      `http://localhost/React-php/search1.php?city=${city}&type=${type}`,
-      {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-        },
+      const response = await fetch(
+        `http://localhost/React-php/search1.php?city=${city}&type=${type}`,
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error('Failed to fetch data');
       }
-    );
 
-    const data = await response.json();
-    setSearchResults(data);
+      const data = await response.json();
+      setSearchResults(data);
 
-    // Navigate to the search results page, passing the results as state
-    navigate("/search-results", { state: { results: data } });
+      // Navigate to the search results page, passing the results as state
+      navigate("/search-results", { state: { results: data } });
+    } catch (error) {
+      console.error('Error searching:', error);
+      // Handle error gracefully (e.g., show a message to the user)
+       // Navigate to the error page
+       navigate("/error");
+    }
   };
 
   return (
