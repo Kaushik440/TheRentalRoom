@@ -7,7 +7,7 @@ const ErrorPage = () => {
   return (
     <div className="containererrors">
       <img src={errorImage} alt="Error" className="error-image" />
-      <h2>Oops! Something went wrong.</h2>
+      <h2> 503 Service Unavailable</h2>
       <p>Please try again later or contact support.</p>
     </div>
   );
