@@ -2,8 +2,7 @@
     background-color: aqua;
     align-items: center;
     text-align: center;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 0px !important;
 }
 .error-image{
   

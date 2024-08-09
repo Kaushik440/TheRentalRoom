@@ -10,7 +10,7 @@ import './Home.css';
 
 function Home() {
   return (
-    <div >
+    < >
       <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
   <div className="carousel-inner">
     <div className="carousel-item active">
@@ -25,7 +25,7 @@ function Home() {
   </div>
 </div>
 
-      <h3 id="ourcollection">Our Collections</h3>
+      <p id="ourcollection">Our Collections</p>
       <div className="container3">
         <div className="room">
           <img src={BHK1} alt="Single Room" />
@@ -44,7 +44,7 @@ function Home() {
           <p>Home</p>
         </div>
       </div>
-    </div>
+    </>
   )};
 
 

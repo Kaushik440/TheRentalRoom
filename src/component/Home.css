@@ -33,6 +33,8 @@
     text-underline-offset: line;
     font-weight: bold;
     color: black;
+    margin-bottom: 0px ;
+    font-size: 1.5rem;
     background-color: #7091E6;
   }
   .room img:hover{
