@@ -10,23 +10,23 @@ import './Home.css';
 
 function Home() {
   return (
-    < >
+    <>
       <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
-  <div className="carousel-inner">
-    <div className="carousel-item active">
-      <img src={RENT2} className="d-block w-100" alt="..."/>
-    </div>
-    <div className="carousel-item">
-      <img src={RENT1} className="d-block w-100" alt="..."/>
-    </div>
-    <div className="carousel-item">
-      <img src={RENT3} className="d-block w-100" alt="..."/>
-    </div>
-  </div>
-</div>
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img src={RENT2} className="d-block w-100" alt="..." />
+          </div>
+          <div className="carousel-item">
+            <img src={RENT1} className="d-block w-100" alt="..." />
+          </div>
+          <div className="carousel-item">
+            <img src={RENT3} className="d-block w-100" alt="..." />
+          </div>
+        </div>
+      </div>
 
       <p id="ourcollection">Our Collections</p>
-      <div className="container3">
+      <div className="Collections">
         <div className="room">
           <img src={BHK1} alt="Single Room" />
           <p>1BHK</p>
@@ -35,6 +35,7 @@ function Home() {
           <img src={BHK2} alt="Double Room" />
           <p>2BHK</p>
         </div>
+
         <div className="room">
           <img src={BHK3} alt="Three Room" />
           <p>3BHK</p>
@@ -45,7 +46,8 @@ function Home() {
         </div>
       </div>
     </>
-  )};
+  )
+};
 
 
 export default Home;

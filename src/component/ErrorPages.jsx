@@ -1,7 +1,7 @@
 // ErrorPage.js
 import React from "react";
-import './ErrorPageS.css';
-import errorImage from './images/error.png'; // Replace with your actual image file path
+import "./ErrorPageS.css";
+import errorImage from "./images/error.png"; // Replace with your actual image file path
 
 const ErrorPage = () => {
   return (

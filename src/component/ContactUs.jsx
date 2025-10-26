@@ -1,37 +1,39 @@
-import React, { useState } from 'react';
-import './ContactUs.css';
+import React, { useState } from "react";
+import "./ContactUs.css";
 
 function ContactUs() {
-  const [successMessage, setSuccessMessage] = useState('');
-  
+  const [successMessage, setSuccessMessage] = useState("");
+
   const submitForm = (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
 
-    fetch('http://localhost/React-php/submitcontactform.php', {
-      method: 'POST',
+    fetch("http://localhost/React-php/submitcontactform.php", {
+      method: "POST",
       body: formData,
     })
-    .then(response => response.text())
-    .then(data => {
-      // Assuming the response is a success message
-      setSuccessMessage("Message Submited Successfully");
-      // Clearing form fields
-      event.target.reset();
-       // Clear success message after 3 seconds
-       setTimeout(() => {
-        setSuccessMessage('');
-      }, 3000); // 3000 milliseconds = 3 seconds
-    })
-    .catch(error => {
-      console.error('Error:', error);
-    });
+      .then((response) => response.text())
+      .then((data) => {
+        // Assuming the response is a success message
+        setSuccessMessage("Message Submited Successfully");
+        // Clearing form fields
+        event.target.reset();
+        // Clear success message after 3 seconds
+        setTimeout(() => {
+          setSuccessMessage("");
+        }, 3000); // 3000 milliseconds = 3 seconds
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
   };
 
   return (
     <div className="containercontactform">
       <form id="contactForm" onSubmit={submitForm}>
-        <h2 className="text-center"><u>Contact Us</u></h2>
+        <h2 className="text-center">
+          <u>Contact Us</u>
+        </h2>
         <label htmlFor="name">Name:</label>
         <input type="text" id="name" name="name" required />
 
@@ -47,8 +49,6 @@ function ContactUs() {
         <button type="submit">Submit</button>
         <div id="response">{successMessage}</div>
       </form>
-
-     
     </div>
   );
 }

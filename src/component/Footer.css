@@ -1,22 +1,19 @@
 /* Footer Styles */
 footer {
     width: 100%;
-    background-color: #111;
+    background-color: #090909;
     text-align: center;
-    padding: 50px 0;
-    color: #fff;
+    padding: 10px 0;
+    color:white;
     position: static; /* Change position to static for proper placement */
     bottom: auto; /* Reset bottom position */
-    
 
   }
-  
   .socialIcons {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
-  
   .socialIcons a {
     text-decoration: none;
     padding: 10px;
@@ -24,80 +21,77 @@ footer {
     margin: 10px;
     border-radius: 50%;
   }
-  
   .socialIcons a i {
     font-size: 2em;
     color: black;
     opacity: 0.9;
-  }
-  
+  } 
   .socialIcons a:hover {
     background-color: #111;
     transition: 0.5s;
   }
-  
   .socialIcons a:hover i {
     color: white;
     transition: 0.5s;
   }
-  
   .footerNav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
-  
   .footerNav ul li a {
     color: white;
     margin: 0 8px;
     text-decoration: none;
     font-size: 1.3em;
-    opacity: 0.7;
     transition: 0.5s;
   }
-  
   .footerNav ul li a:hover {
     opacity: 1;
   }
-  
   .footerBottom {
-    background-color: #111;
-    padding: 20px;
+    padding: 5px;
     text-align: center;
   }
   /* Media query for smaller screens */
+
 @media only screen and (max-width: 768px) {
-  .menu-icon {
-    display: block;
-  }
-
-  .menu-links {
-    display: none;
-    flex-direction: column;
-  }
-
-  .menu-links.active {
-    display: flex;
-  }
-
-  /* Adjust footer padding for smaller screens */
   footer {
-    padding: 10px 0;
+    padding: 5px 0;
+  }
+
+  .footerNav ul {
+    
+    padding: 0;
+  }
+
+  .footerNav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
   }
   .footerNav ul li a {
     color: white;
-    margin: 0 4px;
+    margin: 0 10px;
     text-decoration: none;
-    font-size: 1.3em;
-    opacity: 0.7;
+    font-size: 1em;
     transition: 0.5s;
   }
+
+
+
+
+  .socialIcons {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
   .socialIcons a {
-    text-decoration: none;
-    padding: 10px;
-    background-color: #ccc;
-    margin: 15px;
-    border-radius: 50%;
+    margin: 10px;
+  }
+  .footerBottom {
+    padding: 2px;
   }
 }

@@ -14,15 +14,17 @@ function Footer() {
         </div>
         <div className="footerNav">
           <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/contact">Contact Us</Link></li>
+            <li><Link to="/about">About US</Link></li>
+            <li><Link to="/careers">Careers</Link></li>
+            <li><Link to="/terms">Terms & Conditions</Link></li>
+            <li><Link to="/faqs">FAQs</Link></li>
+            <li><Link to="/privacy">Privacy Policy</Link></li>
             <li><Link to="/team">Our Team</Link></li>
           </ul>
         </div>
       </div>
       <div className="footerBottom">
-        <p>Copyright &copy; 2024 Designed by <span className="designer">ABCD</span></p>
+        <p>Copyright &copy; 2024 Designed by <span className="designer">abcd.Ltd</span></p>
       </div>
     </footer>
   );
